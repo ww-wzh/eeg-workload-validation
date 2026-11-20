@@ -1,0 +1,5423 @@
+{
+  "pairs": [
+    {
+      "pair_id": "sub-01_NBACK_S1_to_S2",
+      "subject": 1,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-01_S1_zeroBACK",
+        "sub-01_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-01_S2_zeroBACK",
+        "sub-01_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-01_NBACK_S1_to_S3",
+      "subject": 1,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-01_S1_zeroBACK",
+        "sub-01_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-01_S3_zeroBACK",
+        "sub-01_S3_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-01_NBACK_S2_to_S1",
+      "subject": 1,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-01_S2_zeroBACK",
+        "sub-01_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-01_S1_zeroBACK",
+        "sub-01_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-01_NBACK_S2_to_S3",
+      "subject": 1,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-01_S2_zeroBACK",
+        "sub-01_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-01_S3_zeroBACK",
+        "sub-01_S3_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-01_NBACK_S3_to_S1",
+      "subject": 1,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-01_S3_zeroBACK",
+        "sub-01_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-01_S1_zeroBACK",
+        "sub-01_S1_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-01_NBACK_S3_to_S2",
+      "subject": 1,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-01_S3_zeroBACK",
+        "sub-01_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-01_S2_zeroBACK",
+        "sub-01_S2_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-01_MATB_S1_to_S2",
+      "subject": 1,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-01_S1_MATBeasy",
+        "sub-01_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-01_S2_MATBeasy",
+        "sub-01_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-01_MATB_S1_to_S3",
+      "subject": 1,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-01_S1_MATBeasy",
+        "sub-01_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-01_S3_MATBeasy",
+        "sub-01_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-01_MATB_S2_to_S1",
+      "subject": 1,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-01_S2_MATBeasy",
+        "sub-01_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-01_S1_MATBeasy",
+        "sub-01_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-01_MATB_S2_to_S3",
+      "subject": 1,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-01_S2_MATBeasy",
+        "sub-01_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-01_S3_MATBeasy",
+        "sub-01_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-01_MATB_S3_to_S1",
+      "subject": 1,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-01_S3_MATBeasy",
+        "sub-01_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-01_S1_MATBeasy",
+        "sub-01_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-01_MATB_S3_to_S2",
+      "subject": 1,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-01_S3_MATBeasy",
+        "sub-01_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-01_S2_MATBeasy",
+        "sub-01_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-02_NBACK_S1_to_S2",
+      "subject": 2,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-02_S1_zeroBACK",
+        "sub-02_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-02_S2_zeroBACK",
+        "sub-02_S2_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-02_NBACK_S1_to_S3",
+      "subject": 2,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-02_S1_zeroBACK",
+        "sub-02_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-02_S3_zeroBACK",
+        "sub-02_S3_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-02_NBACK_S2_to_S1",
+      "subject": 2,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-02_S2_zeroBACK",
+        "sub-02_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-02_S1_zeroBACK",
+        "sub-02_S1_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-02_NBACK_S2_to_S3",
+      "subject": 2,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-02_S2_zeroBACK",
+        "sub-02_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-02_S3_zeroBACK",
+        "sub-02_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-02_NBACK_S3_to_S1",
+      "subject": 2,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-02_S3_zeroBACK",
+        "sub-02_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-02_S1_zeroBACK",
+        "sub-02_S1_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-02_NBACK_S3_to_S2",
+      "subject": 2,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-02_S3_zeroBACK",
+        "sub-02_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-02_S2_zeroBACK",
+        "sub-02_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-02_MATB_S1_to_S2",
+      "subject": 2,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-02_S1_MATBeasy",
+        "sub-02_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-02_S2_MATBeasy",
+        "sub-02_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-02_MATB_S1_to_S3",
+      "subject": 2,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-02_S1_MATBeasy",
+        "sub-02_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-02_S3_MATBeasy",
+        "sub-02_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-02_MATB_S2_to_S1",
+      "subject": 2,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-02_S2_MATBeasy",
+        "sub-02_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-02_S1_MATBeasy",
+        "sub-02_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-02_MATB_S2_to_S3",
+      "subject": 2,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-02_S2_MATBeasy",
+        "sub-02_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-02_S3_MATBeasy",
+        "sub-02_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-02_MATB_S3_to_S1",
+      "subject": 2,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-02_S3_MATBeasy",
+        "sub-02_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-02_S1_MATBeasy",
+        "sub-02_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-02_MATB_S3_to_S2",
+      "subject": 2,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-02_S3_MATBeasy",
+        "sub-02_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-02_S2_MATBeasy",
+        "sub-02_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-03_NBACK_S1_to_S2",
+      "subject": 3,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-03_S1_zeroBACK",
+        "sub-03_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-03_S2_zeroBACK",
+        "sub-03_S2_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-03_NBACK_S1_to_S3",
+      "subject": 3,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-03_S1_zeroBACK",
+        "sub-03_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-03_S3_zeroBACK",
+        "sub-03_S3_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-03_NBACK_S2_to_S1",
+      "subject": 3,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-03_S2_zeroBACK",
+        "sub-03_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-03_S1_zeroBACK",
+        "sub-03_S1_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-03_NBACK_S2_to_S3",
+      "subject": 3,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-03_S2_zeroBACK",
+        "sub-03_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-03_S3_zeroBACK",
+        "sub-03_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-03_NBACK_S3_to_S1",
+      "subject": 3,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-03_S3_zeroBACK",
+        "sub-03_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-03_S1_zeroBACK",
+        "sub-03_S1_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-03_NBACK_S3_to_S2",
+      "subject": 3,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-03_S3_zeroBACK",
+        "sub-03_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-03_S2_zeroBACK",
+        "sub-03_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-03_MATB_S1_to_S2",
+      "subject": 3,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-03_S1_MATBeasy",
+        "sub-03_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-03_S2_MATBeasy",
+        "sub-03_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-03_MATB_S1_to_S3",
+      "subject": 3,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-03_S1_MATBeasy",
+        "sub-03_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-03_S3_MATBeasy",
+        "sub-03_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-03_MATB_S2_to_S1",
+      "subject": 3,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-03_S2_MATBeasy",
+        "sub-03_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-03_S1_MATBeasy",
+        "sub-03_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-03_MATB_S2_to_S3",
+      "subject": 3,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-03_S2_MATBeasy",
+        "sub-03_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-03_S3_MATBeasy",
+        "sub-03_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-03_MATB_S3_to_S1",
+      "subject": 3,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-03_S3_MATBeasy",
+        "sub-03_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-03_S1_MATBeasy",
+        "sub-03_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-03_MATB_S3_to_S2",
+      "subject": 3,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-03_S3_MATBeasy",
+        "sub-03_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-03_S2_MATBeasy",
+        "sub-03_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-04_NBACK_S1_to_S2",
+      "subject": 4,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-04_S1_zeroBACK",
+        "sub-04_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-04_S2_zeroBACK",
+        "sub-04_S2_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-04_NBACK_S1_to_S3",
+      "subject": 4,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-04_S1_zeroBACK",
+        "sub-04_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-04_S3_zeroBACK",
+        "sub-04_S3_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-04_NBACK_S2_to_S1",
+      "subject": 4,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-04_S2_zeroBACK",
+        "sub-04_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-04_S1_zeroBACK",
+        "sub-04_S1_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-04_NBACK_S2_to_S3",
+      "subject": 4,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-04_S2_zeroBACK",
+        "sub-04_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-04_S3_zeroBACK",
+        "sub-04_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-04_NBACK_S3_to_S1",
+      "subject": 4,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-04_S3_zeroBACK",
+        "sub-04_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-04_S1_zeroBACK",
+        "sub-04_S1_twoBACK"
+      ],
+      "matching_cadence": false,
+      "uninterrupted": true,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-04_NBACK_S3_to_S2",
+      "subject": 4,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-04_S3_zeroBACK",
+        "sub-04_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-04_S2_zeroBACK",
+        "sub-04_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-04_MATB_S1_to_S2",
+      "subject": 4,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-04_S1_MATBeasy",
+        "sub-04_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-04_S2_MATBeasy",
+        "sub-04_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-04_MATB_S1_to_S3",
+      "subject": 4,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-04_S1_MATBeasy",
+        "sub-04_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-04_S3_MATBeasy",
+        "sub-04_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-04_MATB_S2_to_S1",
+      "subject": 4,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-04_S2_MATBeasy",
+        "sub-04_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-04_S1_MATBeasy",
+        "sub-04_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-04_MATB_S2_to_S3",
+      "subject": 4,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-04_S2_MATBeasy",
+        "sub-04_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-04_S3_MATBeasy",
+        "sub-04_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-04_MATB_S3_to_S1",
+      "subject": 4,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-04_S3_MATBeasy",
+        "sub-04_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-04_S1_MATBeasy",
+        "sub-04_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-04_MATB_S3_to_S2",
+      "subject": 4,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-04_S3_MATBeasy",
+        "sub-04_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-04_S2_MATBeasy",
+        "sub-04_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-05_NBACK_S1_to_S2",
+      "subject": 5,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-05_S1_zeroBACK",
+        "sub-05_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-05_S2_zeroBACK",
+        "sub-05_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-05_NBACK_S1_to_S3",
+      "subject": 5,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-05_S1_zeroBACK",
+        "sub-05_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-05_S3_zeroBACK",
+        "sub-05_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-05_NBACK_S2_to_S1",
+      "subject": 5,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-05_S2_zeroBACK",
+        "sub-05_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-05_S1_zeroBACK",
+        "sub-05_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-05_NBACK_S2_to_S3",
+      "subject": 5,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-05_S2_zeroBACK",
+        "sub-05_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-05_S3_zeroBACK",
+        "sub-05_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-05_NBACK_S3_to_S1",
+      "subject": 5,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-05_S3_zeroBACK",
+        "sub-05_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-05_S1_zeroBACK",
+        "sub-05_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-05_NBACK_S3_to_S2",
+      "subject": 5,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-05_S3_zeroBACK",
+        "sub-05_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-05_S2_zeroBACK",
+        "sub-05_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-05_MATB_S1_to_S2",
+      "subject": 5,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-05_S1_MATBeasy",
+        "sub-05_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-05_S2_MATBeasy",
+        "sub-05_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-05_MATB_S1_to_S3",
+      "subject": 5,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-05_S1_MATBeasy",
+        "sub-05_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-05_S3_MATBeasy",
+        "sub-05_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-05_MATB_S2_to_S1",
+      "subject": 5,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-05_S2_MATBeasy",
+        "sub-05_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-05_S1_MATBeasy",
+        "sub-05_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-05_MATB_S2_to_S3",
+      "subject": 5,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-05_S2_MATBeasy",
+        "sub-05_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-05_S3_MATBeasy",
+        "sub-05_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-05_MATB_S3_to_S1",
+      "subject": 5,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-05_S3_MATBeasy",
+        "sub-05_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-05_S1_MATBeasy",
+        "sub-05_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-05_MATB_S3_to_S2",
+      "subject": 5,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-05_S3_MATBeasy",
+        "sub-05_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-05_S2_MATBeasy",
+        "sub-05_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-06_NBACK_S1_to_S2",
+      "subject": 6,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-06_S1_zeroBACK",
+        "sub-06_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-06_S2_zeroBACK",
+        "sub-06_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_NBACK_S1_to_S3",
+      "subject": 6,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-06_S1_zeroBACK",
+        "sub-06_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-06_S3_zeroBACK",
+        "sub-06_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_NBACK_S2_to_S1",
+      "subject": 6,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-06_S2_zeroBACK",
+        "sub-06_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-06_S1_zeroBACK",
+        "sub-06_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_NBACK_S2_to_S3",
+      "subject": 6,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-06_S2_zeroBACK",
+        "sub-06_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-06_S3_zeroBACK",
+        "sub-06_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_NBACK_S3_to_S1",
+      "subject": 6,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-06_S3_zeroBACK",
+        "sub-06_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-06_S1_zeroBACK",
+        "sub-06_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_NBACK_S3_to_S2",
+      "subject": 6,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-06_S3_zeroBACK",
+        "sub-06_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-06_S2_zeroBACK",
+        "sub-06_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_MATB_S1_to_S2",
+      "subject": 6,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-06_S1_MATBeasy",
+        "sub-06_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-06_S2_MATBeasy",
+        "sub-06_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_MATB_S1_to_S3",
+      "subject": 6,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-06_S1_MATBeasy",
+        "sub-06_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-06_S3_MATBeasy",
+        "sub-06_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_MATB_S2_to_S1",
+      "subject": 6,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-06_S2_MATBeasy",
+        "sub-06_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-06_S1_MATBeasy",
+        "sub-06_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_MATB_S2_to_S3",
+      "subject": 6,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-06_S2_MATBeasy",
+        "sub-06_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-06_S3_MATBeasy",
+        "sub-06_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_MATB_S3_to_S1",
+      "subject": 6,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-06_S3_MATBeasy",
+        "sub-06_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-06_S1_MATBeasy",
+        "sub-06_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-06_MATB_S3_to_S2",
+      "subject": 6,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-06_S3_MATBeasy",
+        "sub-06_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-06_S2_MATBeasy",
+        "sub-06_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_NBACK_S1_to_S2",
+      "subject": 7,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-07_S1_zeroBACK",
+        "sub-07_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-07_S2_zeroBACK",
+        "sub-07_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_NBACK_S1_to_S3",
+      "subject": 7,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-07_S1_zeroBACK",
+        "sub-07_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-07_S3_zeroBACK",
+        "sub-07_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_NBACK_S2_to_S1",
+      "subject": 7,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-07_S2_zeroBACK",
+        "sub-07_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-07_S1_zeroBACK",
+        "sub-07_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_NBACK_S2_to_S3",
+      "subject": 7,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-07_S2_zeroBACK",
+        "sub-07_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-07_S3_zeroBACK",
+        "sub-07_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_NBACK_S3_to_S1",
+      "subject": 7,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-07_S3_zeroBACK",
+        "sub-07_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-07_S1_zeroBACK",
+        "sub-07_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_NBACK_S3_to_S2",
+      "subject": 7,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-07_S3_zeroBACK",
+        "sub-07_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-07_S2_zeroBACK",
+        "sub-07_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_MATB_S1_to_S2",
+      "subject": 7,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-07_S1_MATBeasy",
+        "sub-07_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-07_S2_MATBeasy",
+        "sub-07_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_MATB_S1_to_S3",
+      "subject": 7,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-07_S1_MATBeasy",
+        "sub-07_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-07_S3_MATBeasy",
+        "sub-07_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_MATB_S2_to_S1",
+      "subject": 7,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-07_S2_MATBeasy",
+        "sub-07_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-07_S1_MATBeasy",
+        "sub-07_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_MATB_S2_to_S3",
+      "subject": 7,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-07_S2_MATBeasy",
+        "sub-07_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-07_S3_MATBeasy",
+        "sub-07_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_MATB_S3_to_S1",
+      "subject": 7,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-07_S3_MATBeasy",
+        "sub-07_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-07_S1_MATBeasy",
+        "sub-07_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-07_MATB_S3_to_S2",
+      "subject": 7,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-07_S3_MATBeasy",
+        "sub-07_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-07_S2_MATBeasy",
+        "sub-07_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-08_NBACK_S1_to_S2",
+      "subject": 8,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-08_S1_zeroBACK",
+        "sub-08_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-08_S2_zeroBACK",
+        "sub-08_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-08_NBACK_S1_to_S3",
+      "subject": 8,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-08_S1_zeroBACK",
+        "sub-08_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-08_S3_zeroBACK",
+        "sub-08_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-08_NBACK_S2_to_S1",
+      "subject": 8,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-08_S2_zeroBACK",
+        "sub-08_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-08_S1_zeroBACK",
+        "sub-08_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-08_NBACK_S2_to_S3",
+      "subject": 8,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-08_S2_zeroBACK",
+        "sub-08_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-08_S3_zeroBACK",
+        "sub-08_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-08_NBACK_S3_to_S1",
+      "subject": 8,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-08_S3_zeroBACK",
+        "sub-08_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-08_S1_zeroBACK",
+        "sub-08_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-08_NBACK_S3_to_S2",
+      "subject": 8,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-08_S3_zeroBACK",
+        "sub-08_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-08_S2_zeroBACK",
+        "sub-08_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-08_MATB_S1_to_S2",
+      "subject": 8,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-08_S1_MATBeasy",
+        "sub-08_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-08_S2_MATBeasy",
+        "sub-08_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-08_MATB_S1_to_S3",
+      "subject": 8,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-08_S1_MATBeasy",
+        "sub-08_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-08_S3_MATBeasy",
+        "sub-08_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-08_MATB_S2_to_S1",
+      "subject": 8,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-08_S2_MATBeasy",
+        "sub-08_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-08_S1_MATBeasy",
+        "sub-08_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-08_MATB_S2_to_S3",
+      "subject": 8,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-08_S2_MATBeasy",
+        "sub-08_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-08_S3_MATBeasy",
+        "sub-08_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-08_MATB_S3_to_S1",
+      "subject": 8,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-08_S3_MATBeasy",
+        "sub-08_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-08_S1_MATBeasy",
+        "sub-08_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-08_MATB_S3_to_S2",
+      "subject": 8,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-08_S3_MATBeasy",
+        "sub-08_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-08_S2_MATBeasy",
+        "sub-08_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-09_NBACK_S1_to_S2",
+      "subject": 9,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-09_S1_zeroBACK",
+        "sub-09_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-09_S2_zeroBACK",
+        "sub-09_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-09_NBACK_S1_to_S3",
+      "subject": 9,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-09_S1_zeroBACK",
+        "sub-09_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-09_S3_zeroBACK",
+        "sub-09_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-09_NBACK_S2_to_S1",
+      "subject": 9,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-09_S2_zeroBACK",
+        "sub-09_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-09_S1_zeroBACK",
+        "sub-09_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-09_NBACK_S2_to_S3",
+      "subject": 9,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-09_S2_zeroBACK",
+        "sub-09_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-09_S3_zeroBACK",
+        "sub-09_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-09_NBACK_S3_to_S1",
+      "subject": 9,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-09_S3_zeroBACK",
+        "sub-09_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-09_S1_zeroBACK",
+        "sub-09_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-09_NBACK_S3_to_S2",
+      "subject": 9,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-09_S3_zeroBACK",
+        "sub-09_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-09_S2_zeroBACK",
+        "sub-09_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-09_MATB_S1_to_S2",
+      "subject": 9,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-09_S1_MATBeasy",
+        "sub-09_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-09_S2_MATBeasy",
+        "sub-09_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-09_MATB_S1_to_S3",
+      "subject": 9,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-09_S1_MATBeasy",
+        "sub-09_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-09_S3_MATBeasy",
+        "sub-09_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-09_MATB_S2_to_S1",
+      "subject": 9,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-09_S2_MATBeasy",
+        "sub-09_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-09_S1_MATBeasy",
+        "sub-09_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-09_MATB_S2_to_S3",
+      "subject": 9,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-09_S2_MATBeasy",
+        "sub-09_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-09_S3_MATBeasy",
+        "sub-09_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-09_MATB_S3_to_S1",
+      "subject": 9,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-09_S3_MATBeasy",
+        "sub-09_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-09_S1_MATBeasy",
+        "sub-09_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-09_MATB_S3_to_S2",
+      "subject": 9,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-09_S3_MATBeasy",
+        "sub-09_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-09_S2_MATBeasy",
+        "sub-09_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_NBACK_S1_to_S2",
+      "subject": 10,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-10_S1_zeroBACK",
+        "sub-10_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-10_S2_zeroBACK",
+        "sub-10_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_NBACK_S1_to_S3",
+      "subject": 10,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-10_S1_zeroBACK",
+        "sub-10_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-10_S3_zeroBACK",
+        "sub-10_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_NBACK_S2_to_S1",
+      "subject": 10,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-10_S2_zeroBACK",
+        "sub-10_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-10_S1_zeroBACK",
+        "sub-10_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_NBACK_S2_to_S3",
+      "subject": 10,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-10_S2_zeroBACK",
+        "sub-10_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-10_S3_zeroBACK",
+        "sub-10_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_NBACK_S3_to_S1",
+      "subject": 10,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-10_S3_zeroBACK",
+        "sub-10_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-10_S1_zeroBACK",
+        "sub-10_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_NBACK_S3_to_S2",
+      "subject": 10,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-10_S3_zeroBACK",
+        "sub-10_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-10_S2_zeroBACK",
+        "sub-10_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_MATB_S1_to_S2",
+      "subject": 10,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-10_S1_MATBeasy",
+        "sub-10_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-10_S2_MATBeasy",
+        "sub-10_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_MATB_S1_to_S3",
+      "subject": 10,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-10_S1_MATBeasy",
+        "sub-10_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-10_S3_MATBeasy",
+        "sub-10_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_MATB_S2_to_S1",
+      "subject": 10,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-10_S2_MATBeasy",
+        "sub-10_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-10_S1_MATBeasy",
+        "sub-10_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_MATB_S2_to_S3",
+      "subject": 10,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-10_S2_MATBeasy",
+        "sub-10_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-10_S3_MATBeasy",
+        "sub-10_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_MATB_S3_to_S1",
+      "subject": 10,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-10_S3_MATBeasy",
+        "sub-10_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-10_S1_MATBeasy",
+        "sub-10_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-10_MATB_S3_to_S2",
+      "subject": 10,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-10_S3_MATBeasy",
+        "sub-10_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-10_S2_MATBeasy",
+        "sub-10_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_NBACK_S1_to_S2",
+      "subject": 11,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-11_S1_zeroBACK",
+        "sub-11_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-11_S2_zeroBACK",
+        "sub-11_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_NBACK_S1_to_S3",
+      "subject": 11,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-11_S1_zeroBACK",
+        "sub-11_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-11_S3_zeroBACK",
+        "sub-11_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_NBACK_S2_to_S1",
+      "subject": 11,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-11_S2_zeroBACK",
+        "sub-11_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-11_S1_zeroBACK",
+        "sub-11_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_NBACK_S2_to_S3",
+      "subject": 11,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-11_S2_zeroBACK",
+        "sub-11_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-11_S3_zeroBACK",
+        "sub-11_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_NBACK_S3_to_S1",
+      "subject": 11,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-11_S3_zeroBACK",
+        "sub-11_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-11_S1_zeroBACK",
+        "sub-11_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_NBACK_S3_to_S2",
+      "subject": 11,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-11_S3_zeroBACK",
+        "sub-11_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-11_S2_zeroBACK",
+        "sub-11_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_MATB_S1_to_S2",
+      "subject": 11,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-11_S1_MATBeasy",
+        "sub-11_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-11_S2_MATBeasy",
+        "sub-11_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_MATB_S1_to_S3",
+      "subject": 11,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-11_S1_MATBeasy",
+        "sub-11_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-11_S3_MATBeasy",
+        "sub-11_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_MATB_S2_to_S1",
+      "subject": 11,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-11_S2_MATBeasy",
+        "sub-11_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-11_S1_MATBeasy",
+        "sub-11_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_MATB_S2_to_S3",
+      "subject": 11,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-11_S2_MATBeasy",
+        "sub-11_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-11_S3_MATBeasy",
+        "sub-11_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_MATB_S3_to_S1",
+      "subject": 11,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-11_S3_MATBeasy",
+        "sub-11_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-11_S1_MATBeasy",
+        "sub-11_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-11_MATB_S3_to_S2",
+      "subject": 11,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-11_S3_MATBeasy",
+        "sub-11_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-11_S2_MATBeasy",
+        "sub-11_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-12_NBACK_S1_to_S2",
+      "subject": 12,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-12_S1_zeroBACK",
+        "sub-12_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-12_S2_zeroBACK",
+        "sub-12_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-12_NBACK_S1_to_S3",
+      "subject": 12,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-12_S1_zeroBACK",
+        "sub-12_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-12_S3_zeroBACK",
+        "sub-12_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-12_NBACK_S2_to_S1",
+      "subject": 12,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-12_S2_zeroBACK",
+        "sub-12_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-12_S1_zeroBACK",
+        "sub-12_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-12_NBACK_S2_to_S3",
+      "subject": 12,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-12_S2_zeroBACK",
+        "sub-12_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-12_S3_zeroBACK",
+        "sub-12_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-12_NBACK_S3_to_S1",
+      "subject": 12,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-12_S3_zeroBACK",
+        "sub-12_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-12_S1_zeroBACK",
+        "sub-12_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-12_NBACK_S3_to_S2",
+      "subject": 12,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-12_S3_zeroBACK",
+        "sub-12_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-12_S2_zeroBACK",
+        "sub-12_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-12_MATB_S1_to_S2",
+      "subject": 12,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-12_S1_MATBeasy",
+        "sub-12_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-12_S2_MATBeasy",
+        "sub-12_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-12_MATB_S1_to_S3",
+      "subject": 12,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-12_S1_MATBeasy",
+        "sub-12_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-12_S3_MATBeasy",
+        "sub-12_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-12_MATB_S2_to_S1",
+      "subject": 12,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-12_S2_MATBeasy",
+        "sub-12_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-12_S1_MATBeasy",
+        "sub-12_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-12_MATB_S2_to_S3",
+      "subject": 12,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-12_S2_MATBeasy",
+        "sub-12_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-12_S3_MATBeasy",
+        "sub-12_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-12_MATB_S3_to_S1",
+      "subject": 12,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-12_S3_MATBeasy",
+        "sub-12_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-12_S1_MATBeasy",
+        "sub-12_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-12_MATB_S3_to_S2",
+      "subject": 12,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-12_S3_MATBeasy",
+        "sub-12_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-12_S2_MATBeasy",
+        "sub-12_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-13_NBACK_S1_to_S2",
+      "subject": 13,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-13_S1_zeroBACK",
+        "sub-13_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-13_S2_zeroBACK",
+        "sub-13_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_NBACK_S1_to_S3",
+      "subject": 13,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-13_S1_zeroBACK",
+        "sub-13_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-13_S3_zeroBACK",
+        "sub-13_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_NBACK_S2_to_S1",
+      "subject": 13,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-13_S2_zeroBACK",
+        "sub-13_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-13_S1_zeroBACK",
+        "sub-13_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_NBACK_S2_to_S3",
+      "subject": 13,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-13_S2_zeroBACK",
+        "sub-13_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-13_S3_zeroBACK",
+        "sub-13_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_NBACK_S3_to_S1",
+      "subject": 13,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-13_S3_zeroBACK",
+        "sub-13_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-13_S1_zeroBACK",
+        "sub-13_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_NBACK_S3_to_S2",
+      "subject": 13,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-13_S3_zeroBACK",
+        "sub-13_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-13_S2_zeroBACK",
+        "sub-13_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_MATB_S1_to_S2",
+      "subject": 13,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-13_S1_MATBeasy",
+        "sub-13_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-13_S2_MATBeasy",
+        "sub-13_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_MATB_S1_to_S3",
+      "subject": 13,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-13_S1_MATBeasy",
+        "sub-13_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-13_S3_MATBeasy",
+        "sub-13_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_MATB_S2_to_S1",
+      "subject": 13,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-13_S2_MATBeasy",
+        "sub-13_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-13_S1_MATBeasy",
+        "sub-13_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_MATB_S2_to_S3",
+      "subject": 13,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-13_S2_MATBeasy",
+        "sub-13_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-13_S3_MATBeasy",
+        "sub-13_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_MATB_S3_to_S1",
+      "subject": 13,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-13_S3_MATBeasy",
+        "sub-13_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-13_S1_MATBeasy",
+        "sub-13_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-13_MATB_S3_to_S2",
+      "subject": 13,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-13_S3_MATBeasy",
+        "sub-13_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-13_S2_MATBeasy",
+        "sub-13_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_NBACK_S1_to_S2",
+      "subject": 14,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-14_S1_zeroBACK",
+        "sub-14_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-14_S2_zeroBACK",
+        "sub-14_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_NBACK_S1_to_S3",
+      "subject": 14,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-14_S1_zeroBACK",
+        "sub-14_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-14_S3_zeroBACK",
+        "sub-14_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_NBACK_S2_to_S1",
+      "subject": 14,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-14_S2_zeroBACK",
+        "sub-14_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-14_S1_zeroBACK",
+        "sub-14_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_NBACK_S2_to_S3",
+      "subject": 14,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-14_S2_zeroBACK",
+        "sub-14_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-14_S3_zeroBACK",
+        "sub-14_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_NBACK_S3_to_S1",
+      "subject": 14,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-14_S3_zeroBACK",
+        "sub-14_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-14_S1_zeroBACK",
+        "sub-14_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_NBACK_S3_to_S2",
+      "subject": 14,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-14_S3_zeroBACK",
+        "sub-14_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-14_S2_zeroBACK",
+        "sub-14_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_MATB_S1_to_S2",
+      "subject": 14,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-14_S1_MATBeasy",
+        "sub-14_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-14_S2_MATBeasy",
+        "sub-14_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_MATB_S1_to_S3",
+      "subject": 14,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-14_S1_MATBeasy",
+        "sub-14_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-14_S3_MATBeasy",
+        "sub-14_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_MATB_S2_to_S1",
+      "subject": 14,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-14_S2_MATBeasy",
+        "sub-14_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-14_S1_MATBeasy",
+        "sub-14_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_MATB_S2_to_S3",
+      "subject": 14,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-14_S2_MATBeasy",
+        "sub-14_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-14_S3_MATBeasy",
+        "sub-14_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_MATB_S3_to_S1",
+      "subject": 14,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-14_S3_MATBeasy",
+        "sub-14_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-14_S1_MATBeasy",
+        "sub-14_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-14_MATB_S3_to_S2",
+      "subject": 14,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-14_S3_MATBeasy",
+        "sub-14_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-14_S2_MATBeasy",
+        "sub-14_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_NBACK_S1_to_S2",
+      "subject": 15,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-15_S1_zeroBACK",
+        "sub-15_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-15_S2_zeroBACK",
+        "sub-15_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_NBACK_S1_to_S3",
+      "subject": 15,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-15_S1_zeroBACK",
+        "sub-15_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-15_S3_zeroBACK",
+        "sub-15_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_NBACK_S2_to_S1",
+      "subject": 15,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-15_S2_zeroBACK",
+        "sub-15_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-15_S1_zeroBACK",
+        "sub-15_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_NBACK_S2_to_S3",
+      "subject": 15,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-15_S2_zeroBACK",
+        "sub-15_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-15_S3_zeroBACK",
+        "sub-15_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_NBACK_S3_to_S1",
+      "subject": 15,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-15_S3_zeroBACK",
+        "sub-15_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-15_S1_zeroBACK",
+        "sub-15_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_NBACK_S3_to_S2",
+      "subject": 15,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-15_S3_zeroBACK",
+        "sub-15_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-15_S2_zeroBACK",
+        "sub-15_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_MATB_S1_to_S2",
+      "subject": 15,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-15_S1_MATBeasy",
+        "sub-15_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-15_S2_MATBeasy",
+        "sub-15_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_MATB_S1_to_S3",
+      "subject": 15,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-15_S1_MATBeasy",
+        "sub-15_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-15_S3_MATBeasy",
+        "sub-15_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_MATB_S2_to_S1",
+      "subject": 15,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-15_S2_MATBeasy",
+        "sub-15_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-15_S1_MATBeasy",
+        "sub-15_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_MATB_S2_to_S3",
+      "subject": 15,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-15_S2_MATBeasy",
+        "sub-15_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-15_S3_MATBeasy",
+        "sub-15_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_MATB_S3_to_S1",
+      "subject": 15,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-15_S3_MATBeasy",
+        "sub-15_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-15_S1_MATBeasy",
+        "sub-15_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-15_MATB_S3_to_S2",
+      "subject": 15,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-15_S3_MATBeasy",
+        "sub-15_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-15_S2_MATBeasy",
+        "sub-15_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-16_NBACK_S1_to_S2",
+      "subject": 16,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-16_S1_zeroBACK",
+        "sub-16_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-16_S2_zeroBACK",
+        "sub-16_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-16_NBACK_S1_to_S3",
+      "subject": 16,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-16_S1_zeroBACK",
+        "sub-16_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-16_S3_zeroBACK",
+        "sub-16_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-16_NBACK_S2_to_S1",
+      "subject": 16,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-16_S2_zeroBACK",
+        "sub-16_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-16_S1_zeroBACK",
+        "sub-16_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-16_NBACK_S2_to_S3",
+      "subject": 16,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-16_S2_zeroBACK",
+        "sub-16_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-16_S3_zeroBACK",
+        "sub-16_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-16_NBACK_S3_to_S1",
+      "subject": 16,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-16_S3_zeroBACK",
+        "sub-16_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-16_S1_zeroBACK",
+        "sub-16_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-16_NBACK_S3_to_S2",
+      "subject": 16,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-16_S3_zeroBACK",
+        "sub-16_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-16_S2_zeroBACK",
+        "sub-16_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-16_MATB_S1_to_S2",
+      "subject": 16,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-16_S1_MATBeasy",
+        "sub-16_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-16_S2_MATBeasy",
+        "sub-16_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-16_MATB_S1_to_S3",
+      "subject": 16,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-16_S1_MATBeasy",
+        "sub-16_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-16_S3_MATBeasy",
+        "sub-16_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-16_MATB_S2_to_S1",
+      "subject": 16,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-16_S2_MATBeasy",
+        "sub-16_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-16_S1_MATBeasy",
+        "sub-16_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-16_MATB_S2_to_S3",
+      "subject": 16,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-16_S2_MATBeasy",
+        "sub-16_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-16_S3_MATBeasy",
+        "sub-16_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-16_MATB_S3_to_S1",
+      "subject": 16,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-16_S3_MATBeasy",
+        "sub-16_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-16_S1_MATBeasy",
+        "sub-16_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-16_MATB_S3_to_S2",
+      "subject": 16,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-16_S3_MATBeasy",
+        "sub-16_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-16_S2_MATBeasy",
+        "sub-16_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-18_NBACK_S1_to_S2",
+      "subject": 18,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-18_S1_zeroBACK",
+        "sub-18_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-18_S2_zeroBACK",
+        "sub-18_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_NBACK_S1_to_S3",
+      "subject": 18,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-18_S1_zeroBACK",
+        "sub-18_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-18_S3_zeroBACK",
+        "sub-18_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_NBACK_S2_to_S1",
+      "subject": 18,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-18_S2_zeroBACK",
+        "sub-18_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-18_S1_zeroBACK",
+        "sub-18_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_NBACK_S2_to_S3",
+      "subject": 18,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-18_S2_zeroBACK",
+        "sub-18_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-18_S3_zeroBACK",
+        "sub-18_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_NBACK_S3_to_S1",
+      "subject": 18,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-18_S3_zeroBACK",
+        "sub-18_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-18_S1_zeroBACK",
+        "sub-18_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_NBACK_S3_to_S2",
+      "subject": 18,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-18_S3_zeroBACK",
+        "sub-18_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-18_S2_zeroBACK",
+        "sub-18_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_MATB_S1_to_S2",
+      "subject": 18,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-18_S1_MATBeasy",
+        "sub-18_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-18_S2_MATBeasy",
+        "sub-18_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_MATB_S1_to_S3",
+      "subject": 18,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-18_S1_MATBeasy",
+        "sub-18_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-18_S3_MATBeasy",
+        "sub-18_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_MATB_S2_to_S1",
+      "subject": 18,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-18_S2_MATBeasy",
+        "sub-18_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-18_S1_MATBeasy",
+        "sub-18_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_MATB_S2_to_S3",
+      "subject": 18,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-18_S2_MATBeasy",
+        "sub-18_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-18_S3_MATBeasy",
+        "sub-18_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_MATB_S3_to_S1",
+      "subject": 18,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-18_S3_MATBeasy",
+        "sub-18_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-18_S1_MATBeasy",
+        "sub-18_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-18_MATB_S3_to_S2",
+      "subject": 18,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-18_S3_MATBeasy",
+        "sub-18_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-18_S2_MATBeasy",
+        "sub-18_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_NBACK_S1_to_S2",
+      "subject": 19,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-19_S1_zeroBACK",
+        "sub-19_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-19_S2_zeroBACK",
+        "sub-19_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_NBACK_S1_to_S3",
+      "subject": 19,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-19_S1_zeroBACK",
+        "sub-19_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-19_S3_zeroBACK",
+        "sub-19_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_NBACK_S2_to_S1",
+      "subject": 19,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-19_S2_zeroBACK",
+        "sub-19_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-19_S1_zeroBACK",
+        "sub-19_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_NBACK_S2_to_S3",
+      "subject": 19,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-19_S2_zeroBACK",
+        "sub-19_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-19_S3_zeroBACK",
+        "sub-19_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_NBACK_S3_to_S1",
+      "subject": 19,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-19_S3_zeroBACK",
+        "sub-19_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-19_S1_zeroBACK",
+        "sub-19_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_NBACK_S3_to_S2",
+      "subject": 19,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-19_S3_zeroBACK",
+        "sub-19_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-19_S2_zeroBACK",
+        "sub-19_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_MATB_S1_to_S2",
+      "subject": 19,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-19_S1_MATBeasy",
+        "sub-19_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-19_S2_MATBeasy",
+        "sub-19_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_MATB_S1_to_S3",
+      "subject": 19,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-19_S1_MATBeasy",
+        "sub-19_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-19_S3_MATBeasy",
+        "sub-19_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_MATB_S2_to_S1",
+      "subject": 19,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-19_S2_MATBeasy",
+        "sub-19_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-19_S1_MATBeasy",
+        "sub-19_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_MATB_S2_to_S3",
+      "subject": 19,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-19_S2_MATBeasy",
+        "sub-19_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-19_S3_MATBeasy",
+        "sub-19_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_MATB_S3_to_S1",
+      "subject": 19,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-19_S3_MATBeasy",
+        "sub-19_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-19_S1_MATBeasy",
+        "sub-19_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-19_MATB_S3_to_S2",
+      "subject": 19,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-19_S3_MATBeasy",
+        "sub-19_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-19_S2_MATBeasy",
+        "sub-19_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_NBACK_S1_to_S2",
+      "subject": 20,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-20_S1_zeroBACK",
+        "sub-20_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-20_S2_zeroBACK",
+        "sub-20_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_NBACK_S1_to_S3",
+      "subject": 20,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-20_S1_zeroBACK",
+        "sub-20_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-20_S3_zeroBACK",
+        "sub-20_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_NBACK_S2_to_S1",
+      "subject": 20,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-20_S2_zeroBACK",
+        "sub-20_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-20_S1_zeroBACK",
+        "sub-20_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_NBACK_S2_to_S3",
+      "subject": 20,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-20_S2_zeroBACK",
+        "sub-20_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-20_S3_zeroBACK",
+        "sub-20_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_NBACK_S3_to_S1",
+      "subject": 20,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-20_S3_zeroBACK",
+        "sub-20_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-20_S1_zeroBACK",
+        "sub-20_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_NBACK_S3_to_S2",
+      "subject": 20,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-20_S3_zeroBACK",
+        "sub-20_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-20_S2_zeroBACK",
+        "sub-20_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_MATB_S1_to_S2",
+      "subject": 20,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-20_S1_MATBeasy",
+        "sub-20_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-20_S2_MATBeasy",
+        "sub-20_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_MATB_S1_to_S3",
+      "subject": 20,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-20_S1_MATBeasy",
+        "sub-20_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-20_S3_MATBeasy",
+        "sub-20_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_MATB_S2_to_S1",
+      "subject": 20,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-20_S2_MATBeasy",
+        "sub-20_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-20_S1_MATBeasy",
+        "sub-20_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_MATB_S2_to_S3",
+      "subject": 20,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-20_S2_MATBeasy",
+        "sub-20_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-20_S3_MATBeasy",
+        "sub-20_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_MATB_S3_to_S1",
+      "subject": 20,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-20_S3_MATBeasy",
+        "sub-20_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-20_S1_MATBeasy",
+        "sub-20_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-20_MATB_S3_to_S2",
+      "subject": 20,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-20_S3_MATBeasy",
+        "sub-20_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-20_S2_MATBeasy",
+        "sub-20_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_NBACK_S1_to_S2",
+      "subject": 21,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-21_S1_zeroBACK",
+        "sub-21_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-21_S2_zeroBACK",
+        "sub-21_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_NBACK_S1_to_S3",
+      "subject": 21,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-21_S1_zeroBACK",
+        "sub-21_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-21_S3_zeroBACK",
+        "sub-21_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_NBACK_S2_to_S1",
+      "subject": 21,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-21_S2_zeroBACK",
+        "sub-21_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-21_S1_zeroBACK",
+        "sub-21_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_NBACK_S2_to_S3",
+      "subject": 21,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-21_S2_zeroBACK",
+        "sub-21_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-21_S3_zeroBACK",
+        "sub-21_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_NBACK_S3_to_S1",
+      "subject": 21,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-21_S3_zeroBACK",
+        "sub-21_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-21_S1_zeroBACK",
+        "sub-21_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_NBACK_S3_to_S2",
+      "subject": 21,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-21_S3_zeroBACK",
+        "sub-21_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-21_S2_zeroBACK",
+        "sub-21_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_MATB_S1_to_S2",
+      "subject": 21,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-21_S1_MATBeasy",
+        "sub-21_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-21_S2_MATBeasy",
+        "sub-21_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_MATB_S1_to_S3",
+      "subject": 21,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-21_S1_MATBeasy",
+        "sub-21_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-21_S3_MATBeasy",
+        "sub-21_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_MATB_S2_to_S1",
+      "subject": 21,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-21_S2_MATBeasy",
+        "sub-21_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-21_S1_MATBeasy",
+        "sub-21_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_MATB_S2_to_S3",
+      "subject": 21,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-21_S2_MATBeasy",
+        "sub-21_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-21_S3_MATBeasy",
+        "sub-21_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_MATB_S3_to_S1",
+      "subject": 21,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-21_S3_MATBeasy",
+        "sub-21_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-21_S1_MATBeasy",
+        "sub-21_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-21_MATB_S3_to_S2",
+      "subject": 21,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-21_S3_MATBeasy",
+        "sub-21_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-21_S2_MATBeasy",
+        "sub-21_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-22_NBACK_S1_to_S2",
+      "subject": 22,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-22_S1_zeroBACK",
+        "sub-22_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-22_S2_zeroBACK",
+        "sub-22_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-22_NBACK_S1_to_S3",
+      "subject": 22,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-22_S1_zeroBACK",
+        "sub-22_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-22_S3_zeroBACK",
+        "sub-22_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-22_NBACK_S2_to_S1",
+      "subject": 22,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-22_S2_zeroBACK",
+        "sub-22_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-22_S1_zeroBACK",
+        "sub-22_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-22_NBACK_S2_to_S3",
+      "subject": 22,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-22_S2_zeroBACK",
+        "sub-22_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-22_S3_zeroBACK",
+        "sub-22_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-22_NBACK_S3_to_S1",
+      "subject": 22,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-22_S3_zeroBACK",
+        "sub-22_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-22_S1_zeroBACK",
+        "sub-22_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-22_NBACK_S3_to_S2",
+      "subject": 22,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-22_S3_zeroBACK",
+        "sub-22_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-22_S2_zeroBACK",
+        "sub-22_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-22_MATB_S1_to_S2",
+      "subject": 22,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-22_S1_MATBeasy",
+        "sub-22_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-22_S2_MATBeasy",
+        "sub-22_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-22_MATB_S1_to_S3",
+      "subject": 22,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-22_S1_MATBeasy",
+        "sub-22_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-22_S3_MATBeasy",
+        "sub-22_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-22_MATB_S2_to_S1",
+      "subject": 22,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-22_S2_MATBeasy",
+        "sub-22_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-22_S1_MATBeasy",
+        "sub-22_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-22_MATB_S2_to_S3",
+      "subject": 22,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-22_S2_MATBeasy",
+        "sub-22_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-22_S3_MATBeasy",
+        "sub-22_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-22_MATB_S3_to_S1",
+      "subject": 22,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-22_S3_MATBeasy",
+        "sub-22_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-22_S1_MATBeasy",
+        "sub-22_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-22_MATB_S3_to_S2",
+      "subject": 22,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-22_S3_MATBeasy",
+        "sub-22_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-22_S2_MATBeasy",
+        "sub-22_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-23_NBACK_S1_to_S2",
+      "subject": 23,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-23_S1_zeroBACK",
+        "sub-23_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-23_S2_zeroBACK",
+        "sub-23_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_NBACK_S1_to_S3",
+      "subject": 23,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-23_S1_zeroBACK",
+        "sub-23_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-23_S3_zeroBACK",
+        "sub-23_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_NBACK_S2_to_S1",
+      "subject": 23,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-23_S2_zeroBACK",
+        "sub-23_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-23_S1_zeroBACK",
+        "sub-23_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_NBACK_S2_to_S3",
+      "subject": 23,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-23_S2_zeroBACK",
+        "sub-23_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-23_S3_zeroBACK",
+        "sub-23_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_NBACK_S3_to_S1",
+      "subject": 23,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-23_S3_zeroBACK",
+        "sub-23_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-23_S1_zeroBACK",
+        "sub-23_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_NBACK_S3_to_S2",
+      "subject": 23,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-23_S3_zeroBACK",
+        "sub-23_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-23_S2_zeroBACK",
+        "sub-23_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_MATB_S1_to_S2",
+      "subject": 23,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-23_S1_MATBeasy",
+        "sub-23_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-23_S2_MATBeasy",
+        "sub-23_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_MATB_S1_to_S3",
+      "subject": 23,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-23_S1_MATBeasy",
+        "sub-23_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-23_S3_MATBeasy",
+        "sub-23_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_MATB_S2_to_S1",
+      "subject": 23,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-23_S2_MATBeasy",
+        "sub-23_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-23_S1_MATBeasy",
+        "sub-23_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_MATB_S2_to_S3",
+      "subject": 23,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-23_S2_MATBeasy",
+        "sub-23_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-23_S3_MATBeasy",
+        "sub-23_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_MATB_S3_to_S1",
+      "subject": 23,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-23_S3_MATBeasy",
+        "sub-23_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-23_S1_MATBeasy",
+        "sub-23_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-23_MATB_S3_to_S2",
+      "subject": 23,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-23_S3_MATBeasy",
+        "sub-23_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-23_S2_MATBeasy",
+        "sub-23_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_NBACK_S1_to_S2",
+      "subject": 24,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-24_S1_zeroBACK",
+        "sub-24_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-24_S2_zeroBACK",
+        "sub-24_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_NBACK_S1_to_S3",
+      "subject": 24,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-24_S1_zeroBACK",
+        "sub-24_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-24_S3_zeroBACK",
+        "sub-24_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_NBACK_S2_to_S1",
+      "subject": 24,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-24_S2_zeroBACK",
+        "sub-24_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-24_S1_zeroBACK",
+        "sub-24_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_NBACK_S2_to_S3",
+      "subject": 24,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-24_S2_zeroBACK",
+        "sub-24_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-24_S3_zeroBACK",
+        "sub-24_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_NBACK_S3_to_S1",
+      "subject": 24,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-24_S3_zeroBACK",
+        "sub-24_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-24_S1_zeroBACK",
+        "sub-24_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_NBACK_S3_to_S2",
+      "subject": 24,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-24_S3_zeroBACK",
+        "sub-24_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-24_S2_zeroBACK",
+        "sub-24_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_MATB_S1_to_S2",
+      "subject": 24,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-24_S1_MATBeasy",
+        "sub-24_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-24_S2_MATBeasy",
+        "sub-24_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_MATB_S1_to_S3",
+      "subject": 24,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-24_S1_MATBeasy",
+        "sub-24_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-24_S3_MATBeasy",
+        "sub-24_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_MATB_S2_to_S1",
+      "subject": 24,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-24_S2_MATBeasy",
+        "sub-24_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-24_S1_MATBeasy",
+        "sub-24_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_MATB_S2_to_S3",
+      "subject": 24,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-24_S2_MATBeasy",
+        "sub-24_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-24_S3_MATBeasy",
+        "sub-24_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_MATB_S3_to_S1",
+      "subject": 24,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-24_S3_MATBeasy",
+        "sub-24_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-24_S1_MATBeasy",
+        "sub-24_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-24_MATB_S3_to_S2",
+      "subject": 24,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-24_S3_MATBeasy",
+        "sub-24_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-24_S2_MATBeasy",
+        "sub-24_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_NBACK_S1_to_S2",
+      "subject": 26,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-26_S1_zeroBACK",
+        "sub-26_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-26_S2_zeroBACK",
+        "sub-26_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_NBACK_S1_to_S3",
+      "subject": 26,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-26_S1_zeroBACK",
+        "sub-26_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-26_S3_zeroBACK",
+        "sub-26_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_NBACK_S2_to_S1",
+      "subject": 26,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-26_S2_zeroBACK",
+        "sub-26_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-26_S1_zeroBACK",
+        "sub-26_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_NBACK_S2_to_S3",
+      "subject": 26,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-26_S2_zeroBACK",
+        "sub-26_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-26_S3_zeroBACK",
+        "sub-26_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_NBACK_S3_to_S1",
+      "subject": 26,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-26_S3_zeroBACK",
+        "sub-26_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-26_S1_zeroBACK",
+        "sub-26_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_NBACK_S3_to_S2",
+      "subject": 26,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-26_S3_zeroBACK",
+        "sub-26_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-26_S2_zeroBACK",
+        "sub-26_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_MATB_S1_to_S2",
+      "subject": 26,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-26_S1_MATBeasy",
+        "sub-26_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-26_S2_MATBeasy",
+        "sub-26_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_MATB_S1_to_S3",
+      "subject": 26,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-26_S1_MATBeasy",
+        "sub-26_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-26_S3_MATBeasy",
+        "sub-26_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_MATB_S2_to_S1",
+      "subject": 26,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-26_S2_MATBeasy",
+        "sub-26_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-26_S1_MATBeasy",
+        "sub-26_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_MATB_S2_to_S3",
+      "subject": 26,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-26_S2_MATBeasy",
+        "sub-26_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-26_S3_MATBeasy",
+        "sub-26_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_MATB_S3_to_S1",
+      "subject": 26,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-26_S3_MATBeasy",
+        "sub-26_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-26_S1_MATBeasy",
+        "sub-26_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-26_MATB_S3_to_S2",
+      "subject": 26,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-26_S3_MATBeasy",
+        "sub-26_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-26_S2_MATBeasy",
+        "sub-26_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-29_NBACK_S1_to_S2",
+      "subject": 29,
+      "task": "NBACK",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-29_S1_zeroBACK",
+        "sub-29_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-29_S2_zeroBACK",
+        "sub-29_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-29_NBACK_S1_to_S3",
+      "subject": 29,
+      "task": "NBACK",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-29_S1_zeroBACK",
+        "sub-29_S1_twoBACK"
+      ],
+      "target_records": [
+        "sub-29_S3_zeroBACK",
+        "sub-29_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-29_NBACK_S2_to_S1",
+      "subject": 29,
+      "task": "NBACK",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-29_S2_zeroBACK",
+        "sub-29_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-29_S1_zeroBACK",
+        "sub-29_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-29_NBACK_S2_to_S3",
+      "subject": 29,
+      "task": "NBACK",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-29_S2_zeroBACK",
+        "sub-29_S2_twoBACK"
+      ],
+      "target_records": [
+        "sub-29_S3_zeroBACK",
+        "sub-29_S3_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-29_NBACK_S3_to_S1",
+      "subject": 29,
+      "task": "NBACK",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-29_S3_zeroBACK",
+        "sub-29_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-29_S1_zeroBACK",
+        "sub-29_S1_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-29_NBACK_S3_to_S2",
+      "subject": 29,
+      "task": "NBACK",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-29_S3_zeroBACK",
+        "sub-29_S3_twoBACK"
+      ],
+      "target_records": [
+        "sub-29_S2_zeroBACK",
+        "sub-29_S2_twoBACK"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-29_MATB_S1_to_S2",
+      "subject": 29,
+      "task": "MATB",
+      "source": 1,
+      "target": 2,
+      "source_records": [
+        "sub-29_S1_MATBeasy",
+        "sub-29_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-29_S2_MATBeasy",
+        "sub-29_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-29_MATB_S1_to_S3",
+      "subject": 29,
+      "task": "MATB",
+      "source": 1,
+      "target": 3,
+      "source_records": [
+        "sub-29_S1_MATBeasy",
+        "sub-29_S1_MATBdiff"
+      ],
+      "target_records": [
+        "sub-29_S3_MATBeasy",
+        "sub-29_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-29_MATB_S2_to_S1",
+      "subject": 29,
+      "task": "MATB",
+      "source": 2,
+      "target": 1,
+      "source_records": [
+        "sub-29_S2_MATBeasy",
+        "sub-29_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-29_S1_MATBeasy",
+        "sub-29_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": true,
+      "primary": true
+    },
+    {
+      "pair_id": "sub-29_MATB_S2_to_S3",
+      "subject": 29,
+      "task": "MATB",
+      "source": 2,
+      "target": 3,
+      "source_records": [
+        "sub-29_S2_MATBeasy",
+        "sub-29_S2_MATBdiff"
+      ],
+      "target_records": [
+        "sub-29_S3_MATBeasy",
+        "sub-29_S3_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-29_MATB_S3_to_S1",
+      "subject": 29,
+      "task": "MATB",
+      "source": 3,
+      "target": 1,
+      "source_records": [
+        "sub-29_S3_MATBeasy",
+        "sub-29_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-29_S1_MATBeasy",
+        "sub-29_S1_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    },
+    {
+      "pair_id": "sub-29_MATB_S3_to_S2",
+      "subject": 29,
+      "task": "MATB",
+      "source": 3,
+      "target": 2,
+      "source_records": [
+        "sub-29_S3_MATBeasy",
+        "sub-29_S3_MATBdiff"
+      ],
+      "target_records": [
+        "sub-29_S2_MATBeasy",
+        "sub-29_S2_MATBdiff"
+      ],
+      "matching_cadence": true,
+      "uninterrupted": false,
+      "primary": false
+    }
+  ],
+  "excluded_sessions": [
+    {
+      "subject": 17,
+      "reason": "Full participant-label quarantine: cross-ID duplicate EEG provenance unresolved"
+    },
+    {
+      "subject": 25,
+      "reason": "Full participant-label quarantine: cross-ID duplicate EEG provenance unresolved"
+    },
+    {
+      "subject": 27,
+      "reason": "Full participant-label quarantine: cross-ID duplicate EEG provenance unresolved"
+    },
+    {
+      "subject": 28,
+      "reason": "Full participant-label quarantine: cross-ID duplicate EEG provenance unresolved"
+    }
+  ],
+  "prepared_utc": "2026-11-10T02:50:19.143760+00:00"
+}

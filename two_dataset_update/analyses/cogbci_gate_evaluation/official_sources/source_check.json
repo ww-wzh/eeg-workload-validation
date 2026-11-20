@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-11-10T10:29:44.971008+00:00",
+  "sources": [
+    {
+      "url": "https://zenodo.org/api/records/7413650",
+      "local_file": "zenodo_7413650.json",
+      "sha256": "dab4df03f59719e12761f186fac3b6355e099d46cdb1feac26962e91989b9b79"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9918545/fullTextXML",
+      "local_file": "PMC9918545.xml",
+      "sha256": "f953b6456cd3237c9ca2a39d986d51be59bd02cd8729547d3a507ab6f173d227"
+    }
+  ],
+  "dataset_metadata": {
+    "title": "COG-BCI database: A multi-session and multi-task EEG cognitive dataset for passive brain-computer interfaces",
+    "doi": "10.5281/zenodo.7413650",
+    "version": "4",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "creators": [
+      {
+        "name": "Hinss, Marcel F.",
+        "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+      },
+      {
+        "name": "Jahanpour, Emilie S.",
+        "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+      },
+      {
+        "name": "Somon, Bertille",
+        "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+      },
+      {
+        "name": "Pluchon, Lou",
+        "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+      },
+      {
+        "name": "Dehais, Frédéric",
+        "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+      },
+      {
+        "name": "Roy, Raphaëlle N.",
+        "affiliation": "ISAE-SUPAERO, Univ. Toulouse, France"
+      }
+    ],
+    "related_identifiers": null
+  },
+  "article_ethics_and_license_passages": [
+    "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ .",
+    "Ethical Approval for the data collection and subsequent distribution was obtained from the Comité d’Éthique de la Recherche - CER at Université de Toulouse (CER number 2021-342). Based on the average number of participants presented in the pBCI literature (around 15 participants per experiment 5 , 22 ), cognitive science literature (around 20 participants per experiment 23 , 24 ) and similar databases (SEED 25 15 participants and DEAP 26 32 participants) we initially recruited 35 participants to perform this experiment. Due to participant dropout and technical issues with the data collection, a total of 29 participants were included in the final experimental setup. Participants (11 Female, 18 Male) were on average 23.9 (Std. 3.20) y.o. All but 4 participants were students, while the others were employees. 14 participants had obtained a bachelor’s degree, while 13 had obtained a master’s degree. Based on the Edinburgh Handedness scale, 2 participants were left-handed.",
+    "The experiment was conducted over 3 sessions spaced one week apart during which participants had to perform 4 different tasks: the N-back task, the MATB-II, the PVT and the arrow-based Eriksen flanker task 19 . Upon their arrival for the first session, participants were informed about the study procedure and asked to read and sign the informed consent.Participants consented to the collection and subsequent distribution of their subjective, behavioral and physiological (cardiac and EEG) data for the duration of the experiment. Participants also consented to having a 3D picture taken. Then they were asked to fill in the demographic questionnaires, as well as the Edinburgh Handedness Inventory 27 . The EEG was set up while participants received task instructions. To ensure precise electrode location for within and between-subjects variability, a 3D picture of their head with the electrode cap was recorded at the beginning of each session. Then, participants completed a short training sequence for all 4 tasks. After training, they filled in the Karolinska Sleepiness Scale 28 (KSS) and performed a two-minute resting state (one-minute eyes open and one minute eyes closed) while their brain activity was recorded. Participants then started performing the tasks, which were presented twice in a pseudorandom order followed systematically by a Rating Scale Mental Effort 29 (RSME). An additional KSS was also completed following the PVT only. Participants were allowed to take short breaks in-between tasks. After all tasks were fully completed, participants performed another resting-state period, before filling in the KSS scale once more. The entire experimental protocol is detailed in Fig. 24 . Completing the tasks took from 65 up to 80 minutes depending on the number of breaks the participants took. Together with setting up the electrodes and training, each session lasted for about two hours, with the first session often lasting a bit longer due to more detailed instructions. Due to the ongoing pandemic at the time of acquisition, a special sanitary protocol was adopted.",
+    "Experimental setup with a participant equipped with the 64 electrode EEG system performing the MATB-II task. Consent for the publication of this picture was obtained from the participant."
+  ],
+  "scope": "Original COG-BCI acquisition/public-source statements only; this is not an institutional determination for the present secondary analysis.",
+  "article_doi": "10.1038/s41597-022-01898-y"
+}

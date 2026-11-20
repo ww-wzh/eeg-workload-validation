@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "n_legacy": 65,
+  "n_new": 14,
+  "n_total": 79,
+  "primary": "exact sign-flip p values in one BH family",
+  "sensitivity": "Wilcoxon Pratt p values in a separate BH family",
+  "inputs": {
+    "shared\\first_dataset\\primary_statistics\\participant_statistics\\primary_comparisons_BH65.csv": "e2cfb7f489320effe8e6443bde7c7d10419d1de1bb19c380035133261a4eb86d",
+    "analyses\\first_dataset_correction\\ordinary_heldout\\statistics\\comparisons_BH14.csv": "f3565b1bd1566d1095fbddaeb4eb999791e8a24edeed8af6565adaade38e11b4"
+  },
+  "publication_export": {
+    "original_file_sha256": "2df5ca17e5a51ea4cf3b1c1ecf130d8aa028ded6b5a26a0f0489a0be7e70b5a8",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

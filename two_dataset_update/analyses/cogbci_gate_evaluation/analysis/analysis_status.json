@@ -1,0 +1,28 @@
+{
+  "status": "analysis_complete_pending_independent_verification",
+  "utc": "2026-11-16T18:40:15.561620+00:00",
+  "input_integrity": {
+    "jobs_verified": 3250,
+    "hashed_payloads": 726823,
+    "execution": "50d0ee8294a1574093cae6d60052208a7cf04d121101832bd8eb50d329b0d263"
+  },
+  "paired_response_rows": 1200,
+  "paired_seed_response_rows": 6000,
+  "independent_participants": 25,
+  "participants_per_task": 25,
+  "row_counts": {
+    "meta_seed_rows": 12000,
+    "meta_rows": 2400,
+    "participant_scores": 5600,
+    "record_scores": 3120,
+    "gate_diagnostics": 2850,
+    "meta_participant_deletion": 6000,
+    "branch_complementarity": 50,
+    "paired_response_changes": 1200,
+    "response_changes_by_outer": 50,
+    "outer_gain_prediction_errors": 250,
+    "method_summary": 24,
+    "comparisons_BH12": 12
+  },
+  "source_sha256": "7b4d5847240c5cc3f34ab77e006612300bab40d3baa398ce9cefe2675fb04cbd"
+}

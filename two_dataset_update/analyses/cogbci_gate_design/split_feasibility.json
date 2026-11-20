@@ -1,0 +1,24 @@
+{
+  "status": "passed_metadata_design_checks_not_training_validation",
+  "checks": {
+    "participant_record_and_class_checks": 15650,
+    "symmetric_exclusion_pair_checks": 600,
+    "accuracy_BA_prediction_patterns": 84
+  },
+  "job_count": 3250,
+  "fit_stage_counts": {
+    "mlp": 78250,
+    "rf": 78250,
+    "extra_trees": 78250,
+    "stacker": 3250
+  },
+  "total_fit_stages": 238000,
+  "outer_target_cells": 50,
+  "meta_rows_per_outer": 24,
+  "total_correlated_meta_rows": 1200,
+  "meta_rows_per_seed_across_tasks": 1200,
+  "total_meta_seed_rows": 6000,
+  "independent_participants_per_task": 25,
+  "untrained_runner_note": "Membership design has been checked; future fitting code must enforce the same exclusions at runtime.",
+  "models_fitted": 0
+}

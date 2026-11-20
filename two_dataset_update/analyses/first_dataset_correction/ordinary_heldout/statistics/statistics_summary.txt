@@ -1,0 +1,15 @@
+                                                                contrast  n_participants  mean_difference_pp  ci95_low_pp  ci95_high_pp  exact_sign_flip_p  bh_adjusted_p_14_family  bh_significant_0_05
+                             loso_arithmetic:heldout DASF vs Feature-MLP              15            0.000000     0.000000      0.000000              1.000                    1.000                False
+                           loso_arithmetic:heldout DASF vs original DASF              15            0.000000     0.000000      0.000000              1.000                    1.000                False
+                            loso_arithmetic:heldout CB-SF vs Feature-MLP              15           -5.000000   -10.000000      0.000000              0.250                    0.875                False
+                         loso_arithmetic:heldout CB-SF vs original CB-SF              15           -3.333333    -8.333333      0.000000              0.500                    1.000                False
+                                 loso_stroop:heldout DASF vs Feature-MLP              13            0.000000     0.000000      0.000000              1.000                    1.000                False
+                               loso_stroop:heldout DASF vs original DASF              13            0.000000     0.000000      0.000000              1.000                    1.000                False
+                                loso_stroop:heldout CB-SF vs Feature-MLP              13           -7.692308   -19.230769      0.000000              0.500                    1.000                False
+                             loso_stroop:heldout CB-SF vs original CB-SF              13            0.000000     0.000000      0.000000              1.000                    1.000                False
+   cross_task_arithmetic_to_stroop:target-task-gain CB-SF vs Feature-MLP              13            1.923077     0.000000      5.769231              1.000                    1.000                False
+cross_task_arithmetic_to_stroop:target-task-gain CB-SF vs original CB-SF              13            1.923077     0.000000      5.769231              1.000                    1.000                False
+   cross_task_stroop_to_arithmetic:target-task-gain CB-SF vs Feature-MLP              13            9.615385     0.000000     23.076923              0.500                    1.000                False
+cross_task_stroop_to_arithmetic:target-task-gain CB-SF vs original CB-SF              13            5.769231     0.000000     11.538462              0.250                    0.875                False
+          cross_task_bidirectional:target-task-gain CB-SF vs Feature-MLP              13            5.769231     0.000000     12.500000              0.250                    0.875                False
+       cross_task_bidirectional:target-task-gain CB-SF vs original CB-SF              13            3.846154     0.961538      6.730769              0.125                    0.875                False

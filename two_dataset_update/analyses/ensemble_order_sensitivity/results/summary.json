@@ -1,0 +1,28 @@
+{
+  "base_model_fits": 0,
+  "created_utc": "2026-11-19T12:52:58.683369+00:00",
+  "cross_task": {
+    "changed_response_rows": 6,
+    "max_absolute_response_change": 0.5,
+    "new_loss_events": 7,
+    "old_loss_events": 5,
+    "rows": 26
+  },
+  "gate_and_predictions": {
+    "changed_recording_class_predictions": 4,
+    "changed_weights": 52,
+    "deletion_rows": 678,
+    "gate_targets": 54,
+    "max_absolute_weight_change": 0.7391884078818245
+  },
+  "independent_unit": "participant",
+  "loso": {
+    "changed_response_rows": 67,
+    "max_absolute_response_change": 0.5,
+    "new_loss_events": 36,
+    "old_loss_events": 19,
+    "rows": 366
+  },
+  "response_definition": "median of five seed probabilities per window; geometric probability aggregation per recording; participant response is fused minus neural participant-macro recording balanced accuracy",
+  "status": "passed"
+}

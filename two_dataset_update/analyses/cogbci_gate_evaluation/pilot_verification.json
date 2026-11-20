@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "utc": "2026-11-10T07:39:11.583074+00:00",
+  "execution": "50d0ee8294a1574093cae6d60052208a7cf04d121101832bd8eb50d329b0d263",
+  "pilot_job": "NBACK_exclude_s01_s02_seed1335",
+  "verifier_sha256": "f41fddec5bc73722c5f629af7645f7f47794996292614523fdf4876c4deb7157",
+  "stage_count": 73,
+  "inner_branch_receipts_checked": 69,
+  "poisoned_heldout_labels_leave_training_and_prediction_inputs_unchanged": true,
+  "symmetric_training_and_seeds_equivalent": true,
+  "independent_original_trainer_probability_errors": {
+    "oof_feature_mlp": 0.0,
+    "oof_rf": 2.220446049250313e-16,
+    "oof_extra_trees": 3.3306690738754696e-16,
+    "oof_always_fuse": 3.3306690738754696e-16,
+    "subject_1_feature_mlp": 0.0,
+    "subject_1_rf": 2.220446049250313e-16,
+    "subject_1_extra_trees": 1.1102230246251565e-16,
+    "subject_1_always_fuse": 2.220446049250313e-16,
+    "subject_2_feature_mlp": 0.0,
+    "subject_2_rf": 2.220446049250313e-16,
+    "subject_2_extra_trees": 2.220446049250313e-16,
+    "subject_2_always_fuse": 2.220446049250313e-16
+  },
+  "selected_epochs_match": true,
+  "completed_job_resume_unchanged": true,
+  "pilot_total_stage_fit_seconds": 174.7873304001987,
+  "pilot_wall_seconds": 193.31533350003883,
+  "independent_replay_seconds": 173.96857519983314,
+  "rough_serial_full_study_seconds": 569854.5840444834,
+  "timing_caveat": "One NBACK unit only; MATB, early-stopping epochs and thermal load can differ. Accuracy did not control continuation."
+}

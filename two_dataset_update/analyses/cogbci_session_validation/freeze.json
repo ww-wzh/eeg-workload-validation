@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-11-10T02:42:43.534317+00:00",
+  "sha256": {
+    "audit_inputs.py": "a390b798afde2882a9d6b804484c8dc8ac1a38b12a1be21dfbdafa901939204e",
+    "neutral_feature_extractor.py": "7e0883223720ad7ba02b2b6de7e95132404a1f59873249faf1a43119e29d6439",
+    "run_validation.py": "f6d5c56435534e5ad591e3ea7a1658b3a76b97c06ad3aa5ff8c88c4aec91b2ed",
+    "verify_results.py": "d4fd9ceba10051caedf5a59803b9d3301b8a6e768139ac7932144f131d643e4a",
+    "protocol.json": "afc98aaf73e1df687b05cd87f5e3aa3d7b34f6af5ce3ef2b9c9abac7e43af6dc",
+    "input_inventory.json": "49705e9e1ca5c1781523c2316a135f409489a9ce169576555b1011218136b1fb"
+  },
+  "original_feature_extractor": "shared\\first_dataset\\preprocessing_sensitivity.py",
+  "original_feature_extractor_sha256": "b24de6334e0a98e2f83398ad173032a50d69717e2956a673fe7adbfec0f7b4e3",
+  "feature_function_AST_identical": true,
+  "versions": {
+    "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:16:45) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.9.0+cu129",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "models_fitted_in_new_experiment_at_freeze": 0,
+  "publication_export": {
+    "original_file_sha256": "24e9cbe5159daa3575b55dc006768d04c4ab63e2c7aab86123f9417278b0150a",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

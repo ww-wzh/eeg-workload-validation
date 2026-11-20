@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "analysis": "held-out-gain participant-level contrasts",
+  "n_contrasts": 14,
+  "bootstrap": {
+    "repeats": 10000,
+    "unit": "whole participant",
+    "interval": "percentile 95%"
+  },
+  "primary_inference": "exact two-sided participant sign-flip; Wilcoxon Pratt approximate sensitivity",
+  "multiple_comparisons": {
+    "primary": "all 14 exact-sign-flip raw p-values in one BH family",
+    "sensitivity": "all 14 Wilcoxon-Pratt raw p-values in one separately labelled BH family"
+  },
+  "inputs": {
+    "shared\\first_dataset\\neutral_predictions\\01_core\\core_recording_predictions.csv": "932666467e6b74238d10ea6152fe6574000ce5ae26bf1006309cc0c238664fda",
+    "shared\\first_dataset\\neutral_predictions\\03_dasf\\recording_predictions.csv": "9510ac62a49c527ddd20fe01435dc3a25eba9d98b5677ec603246f0e11ea583c",
+    "shared\\first_dataset\\neutral_predictions\\04_cbsf\\recording_predictions.csv": "3cc567d7de9ebfc0fea6612efa3f0e6e8fd7ae75b59df583c627c3165b38bea2",
+    "analyses\\first_dataset_correction\\ordinary_heldout\\recording_predictions.csv": "4990959305b7da1fa0aea38e907872b9dd998c0579bc301ef1e00d2a8fa5963f"
+  },
+  "methods": {
+    "feature_mlp": "core always_nn",
+    "dasf_original": "03_dasf dasf_clean",
+    "cbsf_original": "04_cbsf cbsf",
+    "dasf_heldout_gain": "185 double-exclusion DASF",
+    "cbsf_heldout_gain": "185 double-exclusion CB-SF",
+    "cbsf_target_task_gain": "185 target-task-gain CB-SF"
+  },
+  "publication_export": {
+    "original_file_sha256": "d0bef97f2d70a868ab2688fe6fde1e3d1b6db97344257b36f848a74c267d56e5",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

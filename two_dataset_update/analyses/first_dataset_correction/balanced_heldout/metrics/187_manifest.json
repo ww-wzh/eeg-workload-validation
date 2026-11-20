@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "prediction_sha256": "a7dc913c0d6a04f54cb2990888645312cd4b7a3aef575c901a808f4969bc7c6f",
+  "diagnostics_sha256": "d5020c3aa8835019ba84a78ad79591fc0148f5d58c70e697a5d36437a009ab56",
+  "training_rows_sha256": "cc60de9ef5d28703efa530319adaf191e5df9781695dea895510f8bd59b4edb7",
+  "metrics_scope": "185 held-out-gain methods; descriptive recording/participant metrics",
+  "event_threshold": "benefit <= -0.05",
+  "event_counts_pooled": {
+    "training_rows": 26,
+    "loss_events": 5,
+    "non_loss_events": 21
+  },
+  "no_retraining": true
+}

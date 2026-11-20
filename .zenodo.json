@@ -1,0 +1,44 @@
+{
+  "title": "EEG Workload Validation: Experimental Code and Results",
+  "upload_type": "software",
+  "description": "Experimental pipelines, source audits, validation protocols, saved predictions, selective-fusion analyses, statistical verification and machine-readable results for Arithmetic/Stroop and COG-BCI EEG workload data. Raw EEG is available from the original data repositories.",
+  "creators": [
+    {
+      "name": "Wan, Zihao"
+    },
+    {
+      "name": "Zhang, Wei"
+    }
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "EEG",
+    "mental workload",
+    "validation",
+    "data provenance",
+    "selective fusion"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17632/kt38js3jv7.1",
+      "scheme": "doi",
+      "relation": "references"
+    },
+    {
+      "identifier": "10.5281/zenodo.7413650",
+      "scheme": "doi",
+      "relation": "references"
+    },
+    {
+      "identifier": "10.5281/zenodo.24328261",
+      "scheme": "doi",
+      "relation": "isDerivedFrom"
+    },
+    {
+      "identifier": "10.5281/zenodo.24340688",
+      "scheme": "doi",
+      "relation": "isDerivedFrom"
+    }
+  ]
+}

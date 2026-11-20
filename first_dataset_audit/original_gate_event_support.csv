@@ -1,0 +1,55 @@
+﻿protocol,direction,subject,setting,training_rows,events,non_events,full_single_class_fallback,loro_single_class_fallbacks,loro_total,bootstrap_single_class_fallbacks,bootstrap_total,full_ood_fallback
+cross_task,arithmetic_to_stroop,1,Arithmetic to Stroop,24,1,23,0,1,24,361,1000,False
+cross_task,arithmetic_to_stroop,2,Arithmetic to Stroop,24,1,23,0,1,24,373,1000,False
+cross_task,arithmetic_to_stroop,3,Arithmetic to Stroop,24,1,23,0,1,24,331,1000,False
+cross_task,arithmetic_to_stroop,4,Arithmetic to Stroop,24,1,23,0,1,24,352,1000,False
+cross_task,arithmetic_to_stroop,5,Arithmetic to Stroop,24,1,23,0,1,24,375,1000,False
+cross_task,arithmetic_to_stroop,6,Arithmetic to Stroop,24,1,23,0,1,24,318,1000,False
+cross_task,arithmetic_to_stroop,7,Arithmetic to Stroop,24,0,24,1,24,24,1000,1000,False
+cross_task,arithmetic_to_stroop,8,Arithmetic to Stroop,24,1,23,0,1,24,359,1000,False
+cross_task,arithmetic_to_stroop,9,Arithmetic to Stroop,24,1,23,0,1,24,349,1000,False
+cross_task,arithmetic_to_stroop,10,Arithmetic to Stroop,24,1,23,0,1,24,344,1000,False
+cross_task,arithmetic_to_stroop,11,Arithmetic to Stroop,24,1,23,0,1,24,350,1000,False
+cross_task,arithmetic_to_stroop,12,Arithmetic to Stroop,24,1,23,0,1,24,377,1000,False
+cross_task,arithmetic_to_stroop,13,Arithmetic to Stroop,24,1,23,0,1,24,400,1000,False
+cross_task,stroop_to_arithmetic,1,Stroop to Arithmetic,24,1,23,0,1,24,378,1000,False
+cross_task,stroop_to_arithmetic,2,Stroop to Arithmetic,24,1,23,0,1,24,373,1000,False
+cross_task,stroop_to_arithmetic,3,Stroop to Arithmetic,24,1,23,0,1,24,366,1000,False
+cross_task,stroop_to_arithmetic,4,Stroop to Arithmetic,24,1,23,0,1,24,352,1000,False
+cross_task,stroop_to_arithmetic,5,Stroop to Arithmetic,24,1,23,0,1,24,375,1000,False
+cross_task,stroop_to_arithmetic,6,Stroop to Arithmetic,24,1,23,0,1,24,380,1000,False
+cross_task,stroop_to_arithmetic,7,Stroop to Arithmetic,24,0,24,1,24,24,1000,1000,False
+cross_task,stroop_to_arithmetic,8,Stroop to Arithmetic,24,1,23,0,1,24,372,1000,False
+cross_task,stroop_to_arithmetic,9,Stroop to Arithmetic,24,1,23,0,1,24,369,1000,False
+cross_task,stroop_to_arithmetic,10,Stroop to Arithmetic,24,1,23,0,1,24,356,1000,False
+cross_task,stroop_to_arithmetic,11,Stroop to Arithmetic,24,1,23,0,1,24,371,1000,False
+cross_task,stroop_to_arithmetic,12,Stroop to Arithmetic,24,1,23,0,1,24,332,1000,False
+cross_task,stroop_to_arithmetic,13,Stroop to Arithmetic,24,1,23,0,1,24,368,1000,False
+loso,arithmetic,1,Arithmetic LOSO,14,0,14,1,14,14,1000,1000,False
+loso,arithmetic,2,Arithmetic LOSO,14,0,14,1,14,14,1000,1000,False
+loso,arithmetic,3,Arithmetic LOSO,14,2,12,0,0,14,112,1000,False
+loso,arithmetic,4,Arithmetic LOSO,14,5,9,0,0,14,1,1000,False
+loso,arithmetic,5,Arithmetic LOSO,14,1,13,0,1,14,360,1000,False
+loso,arithmetic,6,Arithmetic LOSO,14,4,10,0,0,14,18,1000,False
+loso,arithmetic,7,Arithmetic LOSO,14,1,13,0,1,14,370,1000,False
+loso,arithmetic,8,Arithmetic LOSO,14,1,13,0,1,14,351,1000,False
+loso,arithmetic,9,Arithmetic LOSO,14,1,13,0,1,14,359,1000,False
+loso,arithmetic,10,Arithmetic LOSO,14,2,12,0,0,14,118,1000,False
+loso,arithmetic,11,Arithmetic LOSO,14,1,13,0,1,14,365,1000,False
+loso,arithmetic,12,Arithmetic LOSO,14,2,12,0,0,14,95,1000,False
+loso,arithmetic,13,Arithmetic LOSO,14,1,13,0,1,14,348,1000,False
+loso,arithmetic,14,Arithmetic LOSO,14,1,13,0,1,14,342,1000,False
+loso,arithmetic,15,Arithmetic LOSO,14,0,14,1,14,14,1000,1000,False
+loso,stroop,1,Stroop LOSO,12,0,12,1,12,12,1000,1000,False
+loso,stroop,2,Stroop LOSO,12,2,10,0,0,12,117,1000,False
+loso,stroop,3,Stroop LOSO,12,2,10,0,0,12,99,1000,False
+loso,stroop,4,Stroop LOSO,12,1,11,0,1,12,332,1000,False
+loso,stroop,5,Stroop LOSO,12,1,11,0,1,12,331,1000,False
+loso,stroop,6,Stroop LOSO,12,1,11,0,1,12,366,1000,False
+loso,stroop,7,Stroop LOSO,12,3,9,0,0,12,20,1000,False
+loso,stroop,8,Stroop LOSO,12,1,11,0,1,12,341,1000,False
+loso,stroop,9,Stroop LOSO,12,1,11,0,1,12,340,1000,False
+loso,stroop,10,Stroop LOSO,12,1,11,0,1,12,342,1000,False
+loso,stroop,11,Stroop LOSO,12,1,11,0,1,12,371,1000,False
+loso,stroop,12,Stroop LOSO,12,1,11,0,1,12,352,1000,False
+loso,stroop,13,Stroop LOSO,12,2,10,0,0,12,106,1000,False

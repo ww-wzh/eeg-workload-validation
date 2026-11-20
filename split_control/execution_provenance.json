@@ -1,0 +1,17 @@
+{
+  "scope": "Saved results from the original 1580 fits; portable code export does not change these fits.",
+  "original_sources_sha256": {
+    "prepare_split_controls.py": "86174b6225891ba2d63ae21fbd4bb3e5932fabad9d6d6c0c158a00579ad656c5",
+    "run_split_control_pilot.py": "76dfcd9f2e80dc18bc06b8d15936d3242f9c9aff9270d55f560351f91fa6cde5",
+    "run_full_split_controls.py": "2bd8526fcae61c4f077a7788a910f525efb7cb1fc5b8d14ad7b00df2398b74f4",
+    "analyze_split_controls.py": "e992aae521d8eec9cd76f3f9cfd642e23e213874732851fb9cc2007f889ebfdf",
+    "verify_full_split_controls.py": "df61017aaa3bbc658bde3558061b59b9501640c3806305de28fea11332722887",
+    "verify_split_control_analysis.py": "fdb64022bdc9743ffaf3d88ae0271f35fb290e9717f248833ee222b9b867e000",
+    "36_运行_预处理敏感性分析.py": "b24de6334e0a98e2f83398ad173032a50d69717e2956a673fe7adbfec0f7b4e3"
+  },
+  "original_protocol_sha256": "654e4eec8fa7d3cd855ea4373e0623c47fc7d7ab9f0cac5f7fc95af8b2881c77",
+  "original_plan_sha256": "46bae28fc5cbbf40098b770b4a3f90ab08ed55d98d63db425edf9bddc45f5d41",
+  "memberships_checked_against_original_results": 1580,
+  "exported_functions": "Original geometry, feature extraction, fitting, aggregation and statistical formulas retained; new CLI uses explicit input/output directories.",
+  "embedded_original_hashes": "Historical verifier JSON hashes refer to original execution files; current distributed hashes are in MANIFEST.sha256."
+}

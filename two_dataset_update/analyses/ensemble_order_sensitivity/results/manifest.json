@@ -1,0 +1,30 @@
+{
+  "analysis_script": "run_analysis.py",
+  "input_sha256": {
+    "analyses/ensemble_order_sensitivity/inputs/meta_index.json": "7ade6fd18dd9607b7433843bdb820b0785af436c22242b526d28a28a1c17f178",
+    "analyses/ensemble_order_sensitivity/inputs/seed_predictions.csv.gz": "6ee687645597873a655fc9c4b7d045b78d201199e84195209f4dae68198bba17",
+    "analyses/ensemble_order_sensitivity/run_analysis.py": "3a1dc3e16897e77d163ffad15a1f24bf6098aa6bc450e3b3088ac0f34a23a941",
+    "analyses/first_dataset_correction/balanced_heldout/gate_diagnostics.csv": "d5020c3aa8835019ba84a78ad79591fc0148f5d58c70e697a5d36437a009ab56",
+    "analyses/first_dataset_correction/balanced_heldout/recording_predictions.csv": "a7dc913c0d6a04f54cb2990888645312cd4b7a3aef575c901a808f4969bc7c6f",
+    "analyses/first_dataset_correction/balanced_heldout/training_rows_cross_task.csv": "cc60de9ef5d28703efa530319adaf191e5df9781695dea895510f8bd59b4edb7",
+    "analyses/first_dataset_correction/balanced_heldout/training_rows_loso.csv": "1ee485f50a8ad22e807ffc0ffb632f74e733cd2700668fe7cf0635f8c4ea1b1a",
+    "analyses/first_dataset_correction/corrected_gate.py": "c5705fd6b36d4b7b1f6735fa8a7798287be639f439607b9bd75e181524bb487d",
+    "shared/first_dataset/loso_gain_inputs/02_all_meta_recording_seed.csv": "8b5326aa913f07173dd148799c29c93c035eb8fb49dfc56d0acd211d919bee4e",
+    "shared/first_dataset/neutral_predictions/01_core/core_window_ensemble.csv": "90e7388b4e62fd24d1afe82b2941d5c2c7749caf0a0050afae6d4bbf6f23650b"
+  },
+  "output_sha256": {
+    "gate_diagnostics.csv": "28c29d4756d7887ad62ce3fd496aa0ba0fcd7a38c412121231b3fd06bf6bd8ed",
+    "participant_deletion.csv": "85c687de0d21e2d5d88789de25af93301ff7c01aa9d55e56a70b6c892bbf8dc0",
+    "participant_metrics.csv": "3c8ced9effeb4b2912cbb907513e5e0b366bd207eb22edd4f70cdf7f676eee66",
+    "recording_predictions.csv": "42807dffad1499b2e618fa377ff9c90ab4be5f329d04241ba93c70de75c2d29c",
+    "response_rows_cross_task.csv": "1cffbb5699ddf58c983b2d32041fd62227ca21ed4974c3c1b70bcf4662ee8f21",
+    "response_rows_loso.csv": "b026fbc3c0776893f70b67eefd9af84d85c8f63a67c91b7d7c2524ed3862b3d9",
+    "statistics/balanced_gain_method_comparisons_BH7.csv": "5bad4af4dc270f97c02caf40b40d76c06c0840647db9759805ef78b4de8f947a",
+    "statistics/balanced_gain_stats_manifest.json": "b88713defb6f1caf2a8ab73cbb930ee77ba61057693209aec9c043cd7f5f37cc",
+    "summary.json": "7439655704881f42ff4cb31ee51ea7f3ed4ba66d17dc60672aeb5974302b4830",
+    "training_rows_cross_task.csv": "f556117c58b1b3f454fdb0c2381cffb7ea5c5c481c95708bc9e41bab2c231506",
+    "training_rows_loso.csv": "8f8efde6c9cb5e227a8e8a7d59a5745bb9cd933d68b8c339df5bbaf269574e58",
+    "window_predictions.csv": "ba3a32f4076c912b144cbaa815fcaf53d5ccf60c414f7eb6354c5f4052145101"
+  },
+  "verified_window_prediction_files": 915
+}

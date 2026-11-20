@@ -1,0 +1,18 @@
+{
+  "status": "all_analysis_and_resume_checks_passed",
+  "source_sha256": "fdb64022bdc9743ffaf3d88ae0271f35fb290e9717f248833ee222b9b867e000",
+  "analysis_manifest_sha256": "5333514f62429698e919dcdd399fc50b5c582847a7f0c3dbe686140e773a577c",
+  "seed_metrics_verified": 790,
+  "participant_metrics_verified": 158,
+  "shared_bootstrap_matrices_verified": 4,
+  "bootstrap_repeats_per_matrix": 10000,
+  "exact_tests_and_BH_family_verified": 8,
+  "participant_contrasts_verified": 105,
+  "workload_participant_rows_verified": 632,
+  "direction_participant_rows_verified": 104,
+  "full_replay_new_fits": 0,
+  "full_replay_reused_fits": 1580,
+  "execution_count": 2,
+  "saved_checkpoint_index_unchanged_on_replay": true,
+  "new_training_in_this_verifier": 0
+}

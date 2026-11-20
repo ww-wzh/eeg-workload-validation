@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "utc": "2026-11-10T10:33:18.260629+00:00",
+  "valid_stage_loaded": true,
+  "changed_seed_rejected": true,
+  "corrupt_copied_payload_rejected": true,
+  "uncommitted_stage_not_reused": true,
+  "scientific_artifact_unchanged": true,
+  "test_source_sha256": "bf904fdff2a172d50c148115901275724cda891163a4131947e715047812107b"
+}

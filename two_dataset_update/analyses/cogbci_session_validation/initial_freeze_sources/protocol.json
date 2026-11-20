@@ -1,0 +1,131 @@
+{
+  "study_id": "cogbci_session_validation",
+  "purpose": "External, exploratory test of recording/session evaluation dependence with participant identity, nominal condition, test windows and training size held fixed.",
+  "dataset_doi": "10.5281/zenodo.7413650",
+  "source_participants": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "tasks": {
+    "NBACK": [
+      "zeroBACK",
+      "twoBACK"
+    ],
+    "MATB": [
+      "MATBeasy",
+      "MATBdiff"
+    ]
+  },
+  "task_labels": "Nominal experimental conditions; task-specific binary extremes. No behavioral-accuracy relabeling and no cross-task equivalence claim.",
+  "channels_in_order": [
+    "Fp1",
+    "Fp2",
+    "F7",
+    "F3",
+    "Fz",
+    "F4",
+    "F8",
+    "C4"
+  ],
+  "channel_reason": "Eight named channels corresponding to the first-dataset channel layout; C4 is the explicit COG electrode, not resolution of the original dataset's C2/C4 ambiguity. No topographic inference.",
+  "preprocessing": {
+    "raw_fs_hz": 500,
+    "analysis_fs_hz": 250,
+    "support_seconds": 12.5,
+    "analysis_window_seconds": 8.5,
+    "edge_context_seconds_each": 2.0,
+    "window_support_rule": "Nonoverlapping 6250-sample supports tiled from each active continuous interval; remainder discarded. Resampling and both filters are independently applied to each support. Use the central 2125 samples after filtering.",
+    "resampling": "scipy.signal.resample_poly(up=1, down=2, default Kaiser window and constant padding)",
+    "notch_hz": 50,
+    "notch_Q": 30,
+    "bandpass_hz": [
+      0.5,
+      55
+    ],
+    "bandpass_order": 4,
+    "filter_mode": "sosfiltfilt, independent support tiles",
+    "features": "First-dataset neutral 272-feature extractor, unchanged definitions; multipliers all 1, no window z-score, Hann 2125, FFT 4096, six original bands.",
+    "artifact_handling": "No ICA, ocular correction, rereferencing or amplitude-threshold rejection. Reject a support only if nonfinite, any selected channel std <= 1e-8 native units, or extracted features nonfinite. Record amplitude diagnostics.",
+    "unit_note": "EEGLAB native sample values treated as microvolts following MNE conversion; verify raw array decoding against MNE. No claim that header alone identifies physical calibration."
+  },
+  "active_interval_rule": {
+    "NBACK": "For each of exactly three explicit block ends, start at the first condition-specific stimulus onset since the previous block end. Require >=20 onsets per block, no unexplained onset gap >5 s and no conflicting task onset codes. Ignore duplicated block-start markers. End at the block-end marker; exclude between-block rests.",
+    "MATB": "First nominal-condition event to the unique explicit task-end marker; require >=20 matching events and no other MATB condition token.",
+    "boundaries": "Split active intervals at any internal EEGLAB boundary before tiling."
+  },
+  "session_eligibility": "Both class records must pass metadata and signal checks and have at least 20 valid support tiles. All delivered participants considered. Records with repeated selected-record FDT SHA-256 are quarantined before fitting.",
+  "primary_population": "Exclude every session marked interrupted in the acquisition notebook, regardless of the stated reason. For NBACK, require corresponding-class median interstimulus intervals to differ by <=0.02 s across source and target, and within-record block medians to vary by <=0.02 s. MATB is analyzed separately. Require at least one valid ordered pair per participant/task.",
+  "sensitivity_populations": [
+    "all_sessions_matching_cadence",
+    "all_sessions_all_pairs"
+  ],
+  "fixed_learner": {
+    "model": "LogisticRegression",
+    "C": 1.0,
+    "penalty": "l2",
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "max_iter": 4000,
+    "tol": 0.0001,
+    "fit_intercept": true,
+    "random_state": 0
+  },
+  "feature_processing": "Train-only std > 1e-8 mask, then train-only StandardScaler. No tuning, label-based feature selection, target normalization or gate training.",
+  "seeds": [
+    1335,
+    1388,
+    1441,
+    1494,
+    1547
+  ],
+  "train_windows_per_class": 10,
+  "test_windows_per_class": 10,
+  "arms": {
+    "same_record": "For each target condition record, select 10 test tiles and 10 distinct training tiles. Fit only on the target session's training tiles.",
+    "cross_session": "Fit on 10 tiles per corresponding condition from another session of the same participant; evaluate exactly the same target test tiles as the same_record arm."
+  },
+  "sampling": "All ordered distinct-session pairs. Target permutation keyed only by subject, task, target session, condition and seed, so target test/training sets are identical across alternative source sessions. Source sampling independently keyed by source, target, condition and seed. Sampling without replacement. No raw support overlap within or across arms' train/test records.",
+  "primary_endpoint": "Participant-macro recording balanced accuracy. For each class test record, aggregate 10 held-out window probabilities by normalized geometric mean, argmax tie -> class 0; score the two class records, average seeds and valid ordered pairs within participant, then average participants.",
+  "secondary_endpoint": "Participant-macro window balanced accuracy, averaged over the same folds and seeds; descriptive.",
+  "primary_comparisons": [
+    "NBACK same_record minus cross_session",
+    "MATB same_record minus cross_session"
+  ],
+  "inference": "Participants are the resampling units. Shared 10000 participant bootstrap draws for means and paired differences; 95% percentile intervals. Two-sided participant sign-flip permutation, 100000 draws with +1 correction, BH correction across exactly two primary task comparisons. Descriptive sensitivity intervals are not additional confirmatory tests.",
+  "inference_seed": 20261110,
+  "scope": "Exploratory extension on a dataset previously used in different local model studies, not a prospectively blinded external validation. This local protocol is frozen before any model fitting in this new experiment.",
+  "interpretation": "A difference estimates dependence on same-record versus another-session evaluation for this fixed pipeline. Session/day/state/electrode drift and within-session time dependence remain combined. Does not identify a unique neural mechanism, prove deployability, validate the fusion gates, or guarantee journal acceptance.",
+  "publication_export": {
+    "original_file_sha256": "afc98aaf73e1df687b05cd87f5e3aa3d7b34f6af5ce3ef2b9c9abac7e43af6dc",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

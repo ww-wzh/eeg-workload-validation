@@ -1,0 +1,11 @@
+experiment,path,contents
+primary_models,frozen/predictions_recording_route_a_v3.csv,14 methods; canonical recording predictions
+primary_statistics,results/primary/,"Cohorts, 65 comparisons, bootstrap, calibration and stability"
+source_audit_first_dataset,first_dataset_audit/,"Raw-file hashes, duplicates and sensitivity"
+matched_splits,matched_split_reproducibility/,"Split memberships, saved predictions and paired statistics"
+split_controls,split_control/,"Temporal separation, filter support and non-overlap"
+corrected_ordinary_gain,two_dataset_update/analyses/first_dataset_correction/ordinary_heldout/,Independent response reconstruction and BH14
+corrected_balanced_gain,two_dataset_update/analyses/first_dataset_correction/balanced_heldout/,Balanced-accuracy response and BH7
+ensemble_response_order,two_dataset_update/analyses/ensemble_order_sensitivity/,"Saved inputs, response reconstruction, refits and deletion"
+cogbci_source_and_session,two_dataset_update/analyses/cogbci_session_validation/,"Source audit, eligibility, matched-session comparisons"
+cogbci_nested_gates,two_dataset_update/analyses/cogbci_gate_evaluation/,"Nested training, gate comparisons, bridges and ablation"

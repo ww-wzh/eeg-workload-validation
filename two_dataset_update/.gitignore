@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.log
+raw_archives/
+jobs/
+features/
+fits/
+prepared_records*/
+
+# These CSVs are saved prediction inputs required by the correction.
+!**/checkpoints/
+!**/checkpoints/*.csv

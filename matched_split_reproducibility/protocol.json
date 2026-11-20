@@ -1,0 +1,129 @@
+{
+  "data": {
+    "tasks": {
+      "arithmetic": 15,
+      "stroop": 13
+    },
+    "recordings_per_participant_task": 4,
+    "recordings_total": 112,
+    "windows_total": 19125,
+    "labels_by_recording_level": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "positive_class": "1 = medium/high workload; 0 = natural/low workload",
+    "features": "272 dimensions; frozen float32 cache converted to float64 before masking/scaling",
+    "neutral_preprocessing": "Eight EEG channels, packet counter excluded; full-record 50 Hz notch Q=30 then zero-phase 0.5-55 Hz bandpass; no within-window z-score; all legacy feature/power multipliers set to 1; FFT 4096",
+    "window_samples": 2125,
+    "stride_samples": 125,
+    "sampling_rate_hz": 250
+  },
+  "learner": {
+    "feature_mask": "Current training-window std(ddof=0) > 1e-8; reject nonfinite input and no retained feature",
+    "scaler": "StandardScaler(with_mean=True, with_std=True), fit on current training windows only",
+    "classifier": "LogisticRegression",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "max_iter": 4000,
+    "tol": 0.0001,
+    "random_state": 0,
+    "fit_intercept": true,
+    "regularization": "L2; l1_ratio=0.0 in sklearn >=1.8, penalty=l2 in earlier versions",
+    "tuning": "None. Participant-disjoint audit is fixed-learner LOSO, not nested hyperparameter search.",
+    "numeric_threads": 1,
+    "training_row_order": "Ascending global window index for every strategy",
+    "convergence": "ConvergenceWarning is a failed fit, never a completed checkpoint"
+  },
+  "splits": {
+    "seeds": [
+      1335,
+      1388,
+      1441,
+      1494,
+      1547
+    ],
+    "random_draws_per_seed": 2,
+    "random_window_88_12": "Within participant-task, StratifiedShuffleSplit(n_splits=2, test_size=0.12, random_state=seed), stratified by binary window label; training is the complement. All four recordings must appear in both partitions; fail rather than resample if coverage is missing.",
+    "random_window_50_50": "Same as random_window_88_12, but test_size=0.50. Separate two-draw splitter for each seed. Approximately, not exactly, matches two-fold recording holdout in window count.",
+    "recording_disjoint": "Within participant and task, shuffle the two recording IDs of each class using numpy default_rng(seed), in class order 0 then 1. Fold j tests the j-th recording from each shuffled class; the remaining two recordings train.",
+    "participant_disjoint": "Within-task LOSO: all recordings from other participants train; all four recordings of the held-out participant test; one deterministic fit per held-out participant.",
+    "intentional_leakage": "Random-window train/test row indices are disjoint but share recordings and overlapping raw samples. These are deliberately leaky comparators for generalization to unseen recordings."
+  },
+  "evaluation": {
+    "recording_probability": "For test windows only, clip each class probability to [1e-12,1], exponentiate the mean log probability within each test recording, then normalize across classes. Argmax ties choose class 0.",
+    "recording_disjoint": "Pool the two complementary OOF folds within each seed to four recordings, calculate metrics, then average the five seed metrics within each participant.",
+    "random_window": "Calculate four-recording metrics separately for each draw; average ten draw metrics within each participant, not their probabilities or decisions.",
+    "participant_disjoint": "Calculate metrics on the four held-out recordings for each participant.",
+    "primary_endpoint": "Mean across participants of within-participant recording balanced accuracy; seeds/draws/recordings are not independent inferential replicates.",
+    "secondary_metrics": [
+      "accuracy",
+      "sensitivity",
+      "specificity",
+      "precision",
+      "f1",
+      "auroc",
+      "pr_auc",
+      "average_precision",
+      "log_loss",
+      "brier_score"
+    ],
+    "definitions": "Binary metrics use class 1 as positive. Undefined precision is NaN; average finite values and retain valid counts. The accompanying verify.py implements the recorded definitions."
+  },
+  "statistics": {
+    "bootstrap_repeats": 10000,
+    "bootstrap": "Participant cluster percentile 95% CI, numpy quantile(method=linear); one task-specific participant-resampling index matrix shared by all strategies, endpoints and contrasts; paired differences resampled intact.",
+    "seed_namespace": "137_neutral_matched_split_v1",
+    "seed_algorithm": "First 8 bytes of SHA256(namespace + | + task), little-endian integer, numpy default_rng PCG64",
+    "primary_comparisons": [
+      [
+        "random_window_88_12",
+        "recording_disjoint"
+      ],
+      [
+        "random_window_88_12",
+        "participant_disjoint"
+      ],
+      [
+        "recording_disjoint",
+        "participant_disjoint"
+      ]
+    ],
+    "sensitivity_comparisons": [
+      [
+        "random_window_50_50",
+        "recording_disjoint"
+      ],
+      [
+        "random_window_50_50",
+        "participant_disjoint"
+      ],
+      [
+        "random_window_88_12",
+        "random_window_50_50"
+      ]
+    ],
+    "test": "Two-sided Wilcoxon signed-rank, Pratt zero handling, normal approximation, no continuity correction; round participant differences to 12 decimal places before ranking; all-zero statistic=0 and p=1.",
+    "multiplicity": "Six primary contrasts and six fraction-sensitivity contrasts form separate BH families. All twelve also form a combined sensitivity family. These families are separate from the primary 14-method analysis.",
+    "sign_flip_sensitivity": "Exact two-sided enumeration over nonzero participant differences; zeros retain zero weight, all-zero p=1; use paired-sum statistic, include equality with tolerance 1e-12. Report BH within each six-contrast family and all12 separately. Assumes sign exchangeability, not a proof of model equivalence.",
+    "effect_unit": "percentage points for balanced accuracy differences and their intervals"
+  },
+  "expected_counts": {
+    "reused_fits": 308,
+    "new_random_window_fits": 560,
+    "audit_folds": 868,
+    "recording_probability_rows": 2912,
+    "evaluation_blocks": 728,
+    "participant_strategy_rows": 112,
+    "comparison_rows": 12
+  },
+  "design_status": "Exploratory follow-up specified after the observed grouped-split results were known.",
+  "strategy_display": {
+    "random_window_88_12": "Random-window 88/12",
+    "recording_disjoint": "Recording-disjoint",
+    "participant_disjoint": "Participant-disjoint LOSO",
+    "random_window_50_50": "Random-window 50/50"
+  }
+}

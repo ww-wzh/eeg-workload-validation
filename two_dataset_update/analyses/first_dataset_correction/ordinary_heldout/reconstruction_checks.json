@@ -1,0 +1,13 @@
+{
+  "legacy_record_probability_replay_max_error": 0.0,
+  "gate_cells": 82,
+  "cbsf_cells": 54,
+  "changed_cbsf_weights": 54,
+  "changed_record_class_predictions": 3,
+  "seed_sensitivity_rows": 270,
+  "participant_deletion_rows": 678,
+  "loss_events_loso_candidate_rows": 19,
+  "loso_candidate_rows": 366,
+  "loss_events_cross_candidate_rows": 6,
+  "cross_candidate_rows": 26
+}

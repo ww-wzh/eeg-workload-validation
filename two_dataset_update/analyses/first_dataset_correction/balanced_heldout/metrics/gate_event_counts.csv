@@ -1,0 +1,4 @@
+direction,training_rows,loss_events,non_loss_events,min_benefit,max_benefit,threshold,event_definition
+arithmetic_to_stroop,13,2,11,-0.25,0.5,-0.050000000000000003,benefit <= -0.05
+stroop_to_arithmetic,13,3,10,-0.5,0.5,-0.050000000000000003,benefit <= -0.05
+pooled,26,5,21,-0.5,0.5,-0.050000000000000003,benefit <= -0.05

@@ -1,0 +1,11 @@
+{
+  "source": "https://zenodo.org/api/records/7413650",
+  "retrieved_date": "2026-11-10",
+  "retrieval": "Read directly from Zenodo API using Invoke-RestMethod; compared with freshly computed full-archive hashes in features/sub-XX_complete.json.",
+  "files": [
+    {"key":"sub-17.zip","size":1090536096,"checksum":"md5:1c81adb20356f3f1429df7d0dd7bb914"},
+    {"key":"sub-27.zip","size":1090533893,"checksum":"md5:0751c82f0cbeb2ee07e8ecec66d2797c"},
+    {"key":"sub-25.zip","size":1089821633,"checksum":"md5:bbe75eb0758ff331f0807b242ee3119c"},
+    {"key":"sub-28.zip","size":1111741947,"checksum":"md5:4d3862026ba6775f29b68a0c2b32e5f7"}
+  ]
+}

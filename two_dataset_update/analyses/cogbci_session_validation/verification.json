@@ -1,0 +1,14 @@
+{
+  "verified_utc": "2026-11-10T02:52:51.519520+00:00",
+  "verification_correction": "v2 reproduces sklearn float32 casting of scaler parameters; no models, predictions or analysis rules changed.",
+  "model_count": 3000,
+  "raw_archives_official_MD5_verified": 29,
+  "features_checked": 348,
+  "max_saved_model_probability_error": 0,
+  "max_solver_iterations": 29,
+  "convergence_warnings": [],
+  "train_test_sample_support_overlap": 0,
+  "target_sets_identical_across_source_choices": true,
+  "saved_probabilities_metrics_and_participant_summaries_recomputed": true,
+  "scope": "Raw decoding checked against MNE on two layouts; official archive hashes verified during extraction. Every saved model prediction, split support and participant metric checked. Models not independently retrained."
+}

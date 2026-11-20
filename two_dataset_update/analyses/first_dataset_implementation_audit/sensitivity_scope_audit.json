@@ -1,0 +1,15 @@
+{
+  "participant_deletion": {
+    "actual_scope": "12 other participants in target direction only; omitting one yields11 rows",
+    "main_gate_scope": "24 rows from12 other participants in BOTH directions; omitting one should yield22 rows",
+    "cross_task_deletion_rows": 312,
+    "rows_where_reported_full_weight_differs_from_main_gate": 312,
+    "max_full_weight_discrepancy": 0.799967627296953
+  },
+  "seed_sensitivity": {
+    "code_issue": "Both-direction training rows receive gain from current target direction through a subject-only lookup.",
+    "subject_seed_pairs_with_direction_dependent_gain": 49,
+    "total_subject_seed_pairs": 65
+  },
+  "action": "Rebuild these sensitivity outputs with direction-aware response keys and participant-wise removal of BOTH directions; not corrected by changing event sign alone."
+}

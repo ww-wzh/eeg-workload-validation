@@ -1,0 +1,39 @@
+{
+  "frozen_utc": "2026-11-10T07:30:28.066501+00:00",
+  "identity": {
+    "code_sha256": {
+      "analyses\\cogbci_gate_evaluation\\run_nested.py": "b3e1a77abb9cba1468ae500c3154b6109053231460dcf47875ffd6d50bd385bf",
+      "shared\\revision_pipeline\\models.py": "cd639f79a45f57a24a99443906e70354ea3229ab2329ed054f27757c000f4156",
+      "shared\\revision_pipeline\\splits.py": "2ac795e205562a3bdc7f0df4a32709966a055660a27c538c2d3bf2e4df50c070"
+    },
+    "design_freeze_sha256": "333eb8dbce0ac9446a9a8d8dde456f7c2121bb4fbd112bdf48d99739c549300b",
+    "protocol_sha256": "a1fd8aaea302b330eec6340c9fa44d31156d843feb41656e913cb8c0613bccda",
+    "runtime": {
+      "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:16:45) [MSC v.1942 64 bit (AMD64)]",
+      "executable": "python",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sklearn": "1.8.0",
+      "torch": "2.9.0+cu129",
+      "joblib": "1.5.3",
+      "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "cuda_runtime": "12.9",
+      "torch_threads": 1,
+      "tree_threads": 8,
+      "deterministic_algorithms": true,
+      "allow_tf32": false,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "prediction_checkpoint_policy": "Save every stage's predictions, membership, seed, epoch and train scaler. Retain all fitted models for the ID-selected engineering pilot; later fits are reproducible from pinned sources and inputs. No mid-epoch resume.",
+    "optimization": "Only frozen unordered-pair symmetry reuse; no scientific design changes."
+  },
+  "identity_sha256": "50d0ee8294a1574093cae6d60052208a7cf04d121101832bd8eb50d329b0d263",
+  "models_fitted_before_freeze": 0,
+  "publication_export": {
+    "original_file_sha256": "f4d0176198a2c48d20c82985ba739554117760ddd9211d345eafa90ebcce63f4",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

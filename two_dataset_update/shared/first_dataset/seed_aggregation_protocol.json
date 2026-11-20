@@ -1,0 +1,98 @@
+{
+  "protocol_id": "neutral_seed_order_and_gate_stability_audit_1",
+  "recorded_at_utc": "2026-09-06T11:43:21Z",
+  "role": "post-hoc diagnostic amendment to104; specified before the new sensitivity results, not preregistration",
+  "main_prediction_sha256": "cba069dd3837e9b3894dc2649aa6c8a9ac80812de996b2dc51cc0aa056f5c5cd",
+  "preservation": "Retain primary predictions and completed sensitivity results; this analysis does not retrain base models.",
+  "seeds": [
+    1335,
+    1388,
+    1441,
+    1494,
+    1547
+  ],
+  "seed_aggregation": {
+    "methods": [
+      "always_nn",
+      "always_fuse",
+      "rf",
+      "extra_trees",
+      "eegnet",
+      "eeg_conformer"
+    ],
+    "excluded": "No fabricated per-seed CB-SF/DASF/derived blend/recording stacker results. Corrected Riemannian predictions are deterministic and not five independent random fits; old Riemannian seed replicas are excluded.",
+    "primary_order": "At each identical window take componentwise median over five seeds, normalize, then geometric mean over windows in the recording, normalize and argmax; ties choose class0",
+    "sensitivity_order": "Change only the window-level across-seed median to mean; retain all other steps",
+    "required_check": "All1140 median recording probabilities must reproduce118 for the six covered methods within1e-10, with exactly identical decisions",
+    "wrong_order_diagnostic": "Also quantify recording-first then seed-median differences; label these as aggregation-order diagnostics, not main mean-versus-median sensitivity",
+    "inference": "participant balanced accuracy, five settings including two directions and bidirectional cross-task paired within person;10000 participant percentile bootstrap; exact two-sided sign-flip sums; one separate BH family of30 mean-minus-median comparisons",
+    "inference_base_seed": 260904,
+    "claim_limit": "seeds are not independent participants; retain median as primary regardless of which has higher accuracy"
+  },
+  "cbsf_stability": {
+    "cells": 54,
+    "training_rows": {
+      "cross_task": 24,
+      "loso_arithmetic": 14,
+      "loso_stroop": 12
+    },
+    "training_people": {
+      "cross_task": 12,
+      "loso_arithmetic": 14,
+      "loso_stroop": 12
+    },
+    "target_batch_recordings": {
+      "cross_task": 3,
+      "loso": 4
+    },
+    "refits": [
+      "full fit reproducing saved gate and118 predictions",
+      "leave-one-meta-row-out",
+      "1000 row-bootstrap refits per target cell"
+    ],
+    "resampling_seed_base": 260903,
+    "rng_derivation": "SHA256 of131|260903|cbsf|protocol|direction|subject; first8 bytes unsigned little endian; numpy PCG64",
+    "parameters": {
+      "catastrophe_threshold": 0.05,
+      "benefit_alpha": 1.0,
+      "catastrophe_c": 1.0,
+      "risk_penalty": 0.05,
+      "temperature": 0.02,
+      "max_weight": 0.8,
+      "feature_z_cap": 5.0,
+      "ood_z_threshold": 10.0
+    },
+    "diagnostics": [
+      "lambda range and quantiles",
+      "lambda>0.4 descriptive threshold frequency",
+      "OOD fallback frequency",
+      "benefit and catastrophe predictions",
+      "ridge and logistic coefficient signs/ranges in resample-specific robust standardized coordinates",
+      "absent single-class logistic models explicitly flagged, not imputed"
+    ],
+    "row_bootstrap_limit": "Cross-task has two direction rows per training person; row perturbations are not an independence-respecting participant bootstrap. All resulting ranges are descriptive algorithm-input stability ranges, not population confidence intervals.",
+    "coefficient_limit": "Coefficient scales change when resample robust scaling changes; signs/ranges are diagnostics, not physiological effects or causal feature importance.",
+    "target_label_policy": "Pass only five label-free target diagnostics into gate refits. Target labels or target benefit must never enter a fit.",
+    "no_risk_claim": "Stability, low weight, or OOD fallback does not establish risk control, safety or online applicability. Lambda>0.4 is not the DASF decision rule."
+  },
+  "dasf_stability": {
+    "rule": "Gain = median(fusion validation accuracy)-median(neural validation accuracy); select fusion iff gain>clip(0.02+0.2*median(covariance shift),0,0.15)",
+    "checks": [
+      "all270 seed decisions and54 final cells reproduce saved diagnostics",
+      "54 selected recording sets reproduce118",
+      "five-seed decision agreement",
+      "leave-one-seed-out recomputation",
+      "1000 seed-row bootstrap recomputations per cell"
+    ],
+    "resampling_seed_base": 260903,
+    "rng_derivation": "SHA256 of131|260903|dasf|protocol|direction|subject; first8 bytes unsigned little endian; numpy PCG64",
+    "limit": "DASF is a fixed hard rule, not the learned CB-SF gate. Seed perturbations are model-randomness diagnostics, not independent-subject inference or meta-row refits."
+  },
+  "failure_and_resume": "Fail on missing/duplicate inputs, stale checksums, mismatched full-fit predictions, nonfinite values or convergence warnings. Atomic per-cell gate checkpoints allow resume; never skip difficult cells.",
+  "publication_export": {
+    "original_file_sha256": "b13d9c15612d1e9bfa8ad01e304ebd87a7b30966250caf420947047c1e04d51b",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

@@ -1,0 +1,17 @@
+﻿sha256,n_files,duplicate_type,recording_ids,file_names
+10a1a639d8c5cd09dc5c82012859c520450726f1cf0e8a314ee4d58e0be4fc86,2,same-participant shared natural baseline across tasks,arithmetic:s08:r0;stroop:s08:r0,Arithmetic/natural-8.txt;Stroop/natural-8.txt
+230b00ddf109b7c5484a61e4e2677e4b0e76cc004d1427e25a0d01a2a2db9d20,2,same-participant shared natural baseline across tasks,arithmetic:s04:r0;stroop:s04:r0,Arithmetic/natural-4.txt;Stroop/natural-4.txt
+2e36a16f0732ff8b704328b3ff55ad3ae7615947dc910ec709285eed7035d3ef,2,exact duplicate across participants,stroop:s14:r3;stroop:s15:r3,Stroop/highlevel-14.txt;Stroop/highlevel-15.txt
+369cdc5654119aa9ba3c8f8c7f4476e41fccc292c14fd802411982109bf79b17,2,same-participant shared natural baseline across tasks,arithmetic:s06:r0;stroop:s06:r0,Arithmetic/natural-6.txt;Stroop/natural-6.txt
+39ad0e65474d4ea74b479f2f8f7f4cb0db6b2afaca3be1f440a1f6cd2dea722b,2,same-participant shared natural baseline across tasks,arithmetic:s02:r0;stroop:s02:r0,Arithmetic/natural-2.txt;Stroop/natural-2.txt
+3ffb4a67c3cf99160109902d9120900784bb3b56b4deecbfd24a481bf48940cb,2,same-participant shared natural baseline across tasks,arithmetic:s14:r0;stroop:s14:r0,Arithmetic/natural-14.txt;Stroop/natural-14.txt
+4aa8f6dbf6e062c39449002e4ab533920f6e76c3d94fd1e5c4b700baccb68575,2,same-participant shared natural baseline across tasks,arithmetic:s07:r0;stroop:s07:r0,Arithmetic/natural-7.txt;Stroop/natural-7.txt
+813be1744c01870112233ff18d292bc2aca52171b95573293e872acbc693cf09,2,same-participant shared natural baseline across tasks,arithmetic:s01:r0;stroop:s01:r0,Arithmetic/natural-1.txt;Stroop/natural-1.txt
+81b9a7a6e9d819793e58ef69b23b214c65f36dcd1d6323095ee3b334057d38b3,2,same-participant shared natural baseline across tasks,arithmetic:s09:r0;stroop:s09:r0,Arithmetic/natural-9.txt;Stroop/natural-9.txt
+941ad558b59a5df0d5acad3dc02503e2f2f73cae9c4c9452862ac997af2c10eb,2,same-participant shared natural baseline across tasks,arithmetic:s11:r0;stroop:s11:r0,Arithmetic/natural-11.txt;Stroop/natural-11.txt
+b196ff6f8f6a80b1c2726efcc29e014913956ec8a6cd24d45167eaf2e64bf6f8,2,same-participant shared natural baseline across tasks,arithmetic:s13:r0;stroop:s13:r0,Arithmetic/natural-13.txt;Stroop/natural-13.txt
+b2358257e3f9450658332d33ee8cd7d629c2980c16af05fd642f9b90656e2c6a,2,same-participant shared natural baseline across tasks,arithmetic:s15:r0;stroop:s15:r0,Arithmetic/natural-15.txt;Stroop/natural-15.txt
+c1deb0a4cd980b27d34b0adc64d0d4ca8f7a7dce08635f5035d431d0fab48756,2,same-participant shared natural baseline across tasks,arithmetic:s03:r0;stroop:s03:r0,Arithmetic/natural-3.txt;Stroop/natural-3.txt
+e21249469c1bea99ebed92854772cb6743865766e8272fdd507960a84eb436ec,2,same-participant shared natural baseline across tasks,arithmetic:s10:r0;stroop:s10:r0,Arithmetic/natural-10.txt;Stroop/natural-10.txt
+ec5fff7ec899e656772cd752f44282a46aab1192a1f07b9c1d34e855cce124fc,2,same-participant shared natural baseline across tasks,arithmetic:s05:r0;stroop:s05:r0,Arithmetic/natural-5.txt;Stroop/natural-5.txt
+f63379c2b027ba4e0b998e28d3c0ca034f3972eede4f8fadb004477ee4d113be,2,same-participant shared natural baseline across tasks,arithmetic:s12:r0;stroop:s12:r0,Arithmetic/natural-12.txt;Stroop/natural-12.txt

@@ -1,0 +1,252 @@
+{
+  "study_id": "cogbci_gate_design",
+  "stage": "B1 protocol and input readiness; no gate/base-model fitting yet",
+  "research_question": "On an external EEG dataset, how do internal stacking-gain proxies and independently held-out gain evidence change selective-fusion decisions and participant-level performance?",
+  "role": "Exploratory external methodological audit; not an assumption of algorithm superiority or a blind confirmatory cohort.",
+  "historical_implementation_issue": "During B1 source verification, 108 historical heldout CB-SF gates were exactly replayed. Config event_threshold=-0.05 was passed to risk_gate.py which internally compares gain<=-argument, giving unintended cutoff +0.05. Correcting the sign changes107 weights and7 record predictions counted across the ordinary and balanced analyses. Separately, legacy cross-task participant-deletion incorrectly used one direction, and cross-task seed sensitivity keyed both directions by subject alone. Correct original-data CB-SF postprocessing and sensitivities before interpreting cross-dataset gates. Fixed Logistic experiments and the DASF decision formula do not use this event model. Original proxy gates have not yet been globally replayed. Preserve archived evidence; see ../first_dataset_implementation_audit/.",
+  "source_dataset": {
+    "version_doi": "10.5281/zenodo.7413650",
+    "parent_experiment": "../cogbci_session_validation",
+    "raw_data_redistributed": false
+  },
+  "chronology": "Prior COG studies and the new matched-session Logistic results have been inspected. This protocol is fixed before fitting any new gate-audit branch, stacker or gate. Source-only feasibility and deterministic feature reconstruction are permitted before execution freeze. Amendments must be timestamped and retain old versions.",
+  "tasks": {
+    "NBACK": {
+      "class_0": "zeroBACK",
+      "class_1": "twoBACK"
+    },
+    "MATB": {
+      "class_0": "MATBeasy",
+      "class_1": "MATBdiff"
+    }
+  },
+  "cohort": {
+    "excluded_subjects_provenance": [
+      17,
+      25,
+      27,
+      28
+    ],
+    "expected_subjects": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      26,
+      29
+    ],
+    "interrupted_sessions": "Exclude all sessions flagged in the official acquisition notebook, for both tasks.",
+    "nback_timing": "Use sessions where all block-median interstimulus intervals of BOTH class records are within 0.02 s of 2.008 s. This dominant acquisition cadence is selected by metadata before model fitting, not by performance.",
+    "matb_timing": "No N-back cadence filter applies to MATB.",
+    "minimum_records": "At least one eligible session containing both nominal class records per participant/task; all eligible sessions are retained together under every participant exclusion.",
+    "expected_counts": {
+      "NBACK": {
+        "participants": 25,
+        "sessions": 63,
+        "records": 126,
+        "windows": 2520
+      },
+      "MATB": {
+        "participants": 25,
+        "sessions": 67,
+        "records": 134,
+        "windows": 2680
+      }
+    },
+    "difference_from_session_audit": "This experiment predicts unseen participants. It does not require two retained sessions per participant. Subject 01 has only S3 in NBACK after canonical-cadence selection. This is distinct from the prior within-person session-pair population and must be disclosed.",
+    "failure_policy": "Do not silently drop people, class records or jobs after seeing scores. Unexpected metadata, missing cache or fitting failure stops the affected stage with a diagnostic. Any scientific exclusion requires a documented amendment."
+  },
+  "inputs": {
+    "features": "Reuse previously verified neutral 272-feature cache definitions; select exactly 20 valid support tiles per record, indices floor(linspace(0,n_valid_tiles-1,20)). No performance-based sampling.",
+    "windowing": "Inherited: nonoverlapping 12.5 s raw supports, independent 500-to-250 Hz resampling, 50 Hz Q30 notch and 0.5-55 Hz fourth-order bandpass; central 8.5 s used. No additional ICA, rereferencing or artifact filtering in this gate comparison.",
+    "channels": [
+      "Fp1",
+      "Fp2",
+      "F7",
+      "F3",
+      "Fz",
+      "F4",
+      "F8",
+      "C4"
+    ],
+    "covariance": "Reconstruct each selected tile from the verified FDT and reproduce the extractor's float32 filtered signal. For the central8.5s window, compute uncentered XX^T/2125 +1e-4 I in float64. The formula and float32 signal are unchanged; only matrix accumulation precision is increased. Require exact symmetry, finite values, numerical positive-semidefiniteness and Frobenius-relative difference <=1e-5 from the existing extractor's float32 matrix. Verify all reconstructed272 features against saved features. These matrices are DASF shift diagnostics, not a new Riemannian model.",
+    "prepared_input_directory": "prepared_records_float64",
+    "precision_amendment": "Before any model fitting or design freeze, original float32 batched products failed a strict elementwise symmetry check. ID-selected subject02 diagnostic found4 failures in160 windows, max relative asymmetry9.98e-8 and max float32-to-float64 relative error2.44e-7; float64 products were exactly symmetric. Preserve the first partial attempt in prepared_records and its source in pre_freeze_attempt_float32. Use only prepared_records_float64 for the frozen inputs; see covariance_precision_diagnostic.json.",
+    "feature_check": {
+      "atol": 0.0002,
+      "rtol": 0.0002
+    },
+    "labels": "Use explicit binary mapping in tasks. Do not call the legacy raw-workload label helper that maps values >=2 to one.",
+    "row_order": "Ascending subject, session, class label and raw support start within task.",
+    "weighting": "20 windows per record; base learners retain original class balancing. More retained sessions contribute more training records; this is disclosed, while final inference gives each participant equal weight."
+  },
+  "seeds": [
+    1335,
+    1388,
+    1441,
+    1494,
+    1547
+  ],
+  "evaluation": {
+    "outer": "Within each task, leave participant T out of ALL scaling, branch/stacker fitting, epoch selection, gate-response construction and gate fitting. Predict all retained recordings of T.",
+    "outer_training_participants": 24,
+    "independent_meta": "For each M != T, exclude all records of BOTH T and M. On the remaining 23 participants, use inner participant LOSO to construct branch inputs and choose neural epochs, fit the stacker internally, refit branches and predict M. Only after saving predictions may M labels score gain.",
+    "meta_training_participants": 23,
+    "inner": "Participant LOSO, all sessions/records of the inner-held participant stay together. The outer T and meta M never enter these folds. MLP epoch selection may use inner-fold labels; such inner predictions are not described as fully independent gain evidence.",
+    "symmetric_reuse": "An unordered exclusion pair {T,M} has exactly the same training participants and deterministic seeds; fit once and predict T and M separately. Prediction APIs and files keep each target separate. For outer T, ONLY the M response enters gate training; the T response belongs to the separate outer M analysis.",
+    "target_features": "Label-free full-batch diagnostics from all retained target participant-task records are permitted for the specified offline transductive gate. Target features must not fit scalers, branches, stacker or gate. No causal/streaming claim.",
+    "isolation_acceptance": "For every outer/meta/inner stage, assert disjoint participant, recording and window IDs; verify train-only transform fitting, both classes, exactly one inner prediction per training window, and no target label in fit/predict APIs."
+  },
+  "base_models": {
+    "implementation_reference": "shared/revision_pipeline/models.py, model and optimizer definitions pinned by SHA-256",
+    "mlp": {
+      "width": 256,
+      "blocks": 3,
+      "dropout": 0.2,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 128,
+      "max_epochs": 100,
+      "patience": 15
+    },
+    "rf": {
+      "n_estimators": 500,
+      "max_depth": 30,
+      "min_samples_leaf": 4,
+      "max_features": 0.25,
+      "class_weight": "balanced"
+    },
+    "extra_trees": {
+      "n_estimators": 500,
+      "max_depth": 30,
+      "min_samples_leaf": 4,
+      "max_features": 0.25,
+      "class_weight": "balanced"
+    },
+    "stacker": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "fit_intercept": true
+    },
+    "mlp_selection": "Train-only StandardScaler on all 272 features; AdamW and class-balanced cross entropy; gradient norm cap1; mean recording log likelihood on inner validation; >1e-12 improvement; restore best epoch; final epoch max(1,int(median(inner best epochs))). No result-dependent epoch floor.",
+    "stacker_inputs": "Three branch p1 logits clipped to [1e-6,1-1e-6]; inverse windows-per-record weights normalized to mean1. Here equal 20-window records make these weights uniform.",
+    "seed_rule": "Inner participants sorted ascending; inner MLP seed=base+1009*(fold_index+1); RF/ET add37/74. Final MLP/stacker seed=base; final RF/ET add37/74. Excluded-pair roles do not affect seeds.",
+    "tuning": "No COG hyperparameter search. Engineering changes are recorded, outcome-driven model changes require a separately labelled future study."
+  },
+  "response_construction": {
+    "proxy": "For each outer T and seed, use its training cohort's inner branch predictions. Score the stacker on the same internal OOF branch inputs used to fit it. Aggregate by recording, then compute each M's balanced-accuracy gain. These deliberately retained proxy responses contain stacker-fit and neural-selection dependence, but no outer-T information.",
+    "heldout": "Score M only with the doubly excluded pipeline's saved predictions. Geometrically aggregate windows per record, calculate BA(fuse)-BA(MLP) per M per seed, then median across five seeds.",
+    "diagnostics": "Five variables: bounded median standardized feature shift, mean absolute p1 disagreement, neural entropy, fused entropy and neural confidence. Compute within seed and median across seeds for meta rows. Feature-shift reference for both proxy and heldout M is the feature set excluding T and M.",
+    "meta_rows": "One response row per other participant:24 rows per outer target per task. Repeated outer folds, sessions and seeds are not new independent people. Save all 1200 outer/meta rows and 6000 seed rows, with their participant grouping.",
+    "metric_equivalence": "Every participant has equal class-0 and class-1 record counts, so record accuracy equals balanced accuracy. Verify this programmatically; no duplicate ordinary-gain experiment.",
+    "interpretation": "Proxy-versus-heldout reconstruction changes the evidence-generating pipeline, including the base-fit training size and diagnostic probabilities. It is not an isolated causal estimate of stacker optimism. Save a response-only bridge to distinguish changed gate response values from changed diagnostic covariates."
+  },
+  "gate_rules": {
+    "cbsf": {
+      "benefit_alpha": 1.0,
+      "event_C": 1.0,
+      "loss_event_threshold": -0.05,
+      "risk_penalty": 0.05,
+      "temperature": 0.02,
+      "max_weight": 0.8,
+      "feature_z_cap": 5.0,
+      "ood_z_threshold": 10.0
+    },
+    "cbsf_definition": "Use pinned robust gate: training median/IQR, SD fallback then1, clip z to +/-5, Ridge benefit clipped to observed training gain range, class-balanced logistic event model with one-class empirical-mean fallback. Weight=0.8*sigmoid(clip((benefit-0.05*event_score)/0.02,-40,40)); OOD max abs un-clipped z>10 ->weight0. Pass positive0.05 to legacy catastrophe_threshold argument, which internally negates it. Event output is an uncalibrated score, not a risk probability guarantee.",
+    "dasf": {
+      "base_margin": 0.02,
+      "covariance_coefficient": 0.2,
+      "max_margin": 0.15
+    },
+    "dasf_definition": "For each seed, average each branch's recording BA equally over the24 meta participants; gain=median_seed(fused macro BA)-median_seed(neural macro BA). Compare with clip(0.02+0.2*cov_shift,0,0.15), strictly greater selects fusion. This participant-macro pooling is an explicit adaptation to unequal retained session counts. Cov_shift uses target and outer-source window-mean uncentered matrices, Frobenius distance divided by half summed Frobenius norms.",
+    "fixed_half": "lambda=0.5 between outer neural and fused probabilities, no fitting or selection.",
+    "response_bridge": "CB-SF with independently generated diagnostics but proxy gain responses, then compare to independent diagnostics plus held-out gain. Outer test diagnostics/probabilities are unchanged. Descriptive mechanism analysis, not an original algorithm.",
+    "aggregation": "For each outer branch, median five-seed per-window probabilities then row-normalize. Calculate final target diagnostics from this ensemble and unlabeled features. Apply one gate decision/weight per participant-task batch to each window; geometrically average resulting probabilities within each recording and renormalize. Argmax tie ->0."
+  },
+  "scored_methods": [
+    "feature_mlp",
+    "rf",
+    "extra_trees",
+    "always_fuse",
+    "fixed_half",
+    "dasf_proxy",
+    "dasf_heldout",
+    "cbsf_proxy",
+    "cbsf_heldout",
+    "cbsf_response_bridge"
+  ],
+  "statistics": {
+    "primary_endpoint": "Each participant's recording BA over all retained sessions; cohort mean gives25 participants equal weight.",
+    "primary_contrasts_per_task": [
+      "dasf_heldout - dasf_proxy",
+      "cbsf_heldout - cbsf_proxy",
+      "dasf_heldout - feature_mlp",
+      "cbsf_heldout - feature_mlp",
+      "cbsf_heldout - always_fuse",
+      "cbsf_heldout - fixed_half"
+    ],
+    "family": "One BH12 family: six predefined contrasts in each of two tasks. Report every contrast, even if tied or unfavorable. All-zero differences ->p1. Do not reduce the family for missing jobs.",
+    "paired_test": "Two-sided participant sign-flip Monte Carlo,100000 draws, +1 correction, absolute mean difference statistic, tolerance1e-12. This uses a sign-symmetry working assumption; cross-validation training overlaps remain a limitation.",
+    "interval": "10000 participant-cluster percentile bootstrap draws; same participant draw matrix across methods/tasks, preserve all within-person records; intervals conditional on saved fits, no pipeline refit.",
+    "inference_seed": 20261110,
+    "secondary": "Participant-level window BA, recording log loss/Brier, sensitivity/specificity, branch repair/harm, event counts and bridge comparisons are descriptive. No new significance search among these endpoints.",
+    "no_pooling": "Do not pool participants from the original dataset with COG or count two tasks as50 people. Do not compare significance labels as a test of effect difference."
+  },
+  "mechanism_and_stability": {
+    "complementarity": "For neural vs fused predictions report recording-level both-correct, neural-only, fused-only, both-wrong; participant gain and harm. A participant-batch hard-choice oracle chooses one complete branch using labels and is diagnostic only, not an achievable score or an upper bound on soft mixtures.",
+    "response_audit": "For each outer target show paired proxy-heldout gains, event changes, decision changes, and gap distribution. Summarize within outer target then across participants;1200 correlated rows are not independent observations.",
+    "gain_prediction": "Compare out-of-outer-participant predicted benefit and event scores with realized outer branch gain; report errors and a descriptive constant predictor using the corresponding training responses. No calibration or thresholds selected on outer outcomes; class-weighted event scores are not probabilities validated by construction.",
+    "seed_checks": "Report five complete seed-specific branch/gate outcomes and separately a gate-only sensitivity varying seed meta evidence while fixing final five-seed outer ensemble. Do not conflate these two checks or treat seeds as independent participants.",
+    "meta_deletion": "For each CB-SF variant and target, omit one of24 meta participants, refit gate-only scaling/Ridge/event model, and report lambda/event/OOD changes. DASF recomputes pooled gain on23 rows. No base refit and no bootstrap CI claim for these ranges.",
+    "sparse_events": "Report positive/negative/zero gains, event and nonevent counts and constant fallback in every gate; do not create artificial events, oversample participants or promise probability calibration.",
+    "limited_ablation": "Only after core audit implementation passes, prespecified heldout-CBSF variants removing risk penalty or OOD guard may be scored as descriptive diagnostics with the same outer predictions. They are not extra primary superiority tests or replacement main methods."
+  },
+  "execution": {
+    "implementation_freeze": "Freeze the implemented runner, source code, dependencies, device and prepared input hashes before the first fit.",
+    "engineering_pilot": "First use task NBACK, unordered exclusion pair {1,2}, seed1335, fixed by ID order before fitting. Verify isolation, stage alignment, no-label prediction API, deterministic resume and symmetric-role equivalence. Accuracy is not a go/no-go criterion.",
+    "after_pilot": "Full execution requires successful engineering-pilot correctness checks with the frozen scientific plan unchanged.",
+    "checkpointing": "Completed checksummed model stages with exact membership/config/input/code/runtime identity; corrupt or changed artifacts stop and are preserved. No claim of mid-epoch resume.",
+    "expected_unique_ensembles": {
+      "outer": 250,
+      "unordered_double_exclusion": 3000
+    },
+    "expected_fit_stages_without_additional_deduplication": {
+      "outer": 19000,
+      "double_exclusion": 219000,
+      "total": 238000,
+      "mlp": 78250,
+      "rf": 78250,
+      "extra_trees": 78250,
+      "stacker": 3250
+    },
+    "optimization": "Pair symmetry reuse only after verification. Further computational reuse requires an equivalence proof and explicit cache identity; do not weaken participant exclusions for speed."
+  },
+  "publication_export": {
+    "original_file_sha256": "a1fd8aaea302b330eec6340c9fa44d31156d843feb41656e913cb8c0613bccda",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

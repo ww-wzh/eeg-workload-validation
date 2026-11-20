@@ -1,0 +1,6 @@
+method,setting,gate_cells,selected_fusion,ood_fallback,mean_weight,mean_predicted_catastrophe,mean_max_abs_robust_z
+cbsf_balanced_gain,loso_arithmetic,15,0,0,0.51005203483040651,0.051211447482297959,1.4721890120163557
+cbsf_balanced_gain,loso_stroop,13,0,0,0.51773285801452595,0.15037593947347264,1.4645233344935324
+cbsf_balanced_target_task_gain,cross_task,26,0,0,0.22834255906191625,0.46378300056477378,2.1792623453550002
+dasf_balanced_gain,loso_arithmetic,15,0,0,,,
+dasf_balanced_gain,loso_stroop,13,0,0,,,

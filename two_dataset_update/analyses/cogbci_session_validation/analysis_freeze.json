@@ -1,0 +1,25 @@
+{
+  "frozen_utc": "2026-11-10T02:49:56.993345+00:00",
+  "sha256": {
+    "audit_inputs.py": "a390b798afde2882a9d6b804484c8dc8ac1a38b12a1be21dfbdafa901939204e",
+    "neutral_feature_extractor.py": "7e0883223720ad7ba02b2b6de7e95132404a1f59873249faf1a43119e29d6439",
+    "run_validation.py": "c228d326813ab7857fd9e86385dfc52446ca2d72aa0eb5ece24fe92eff760a4d",
+    "verify_results.py": "a6bd70f70272fba327c867fe05b5989948b8c47e34d6582628ab7bdb40228e50",
+    "protocol.json": "e961bb7e7193450db98e1a7934b8095c1d84846869b297b3abfa1666d02816cb",
+    "input_inventory.json": "49705e9e1ca5c1781523c2316a135f409489a9ce169576555b1011218136b1fb",
+    "freeze.json": "24e9cbe5159daa3575b55dc006768d04c4ab63e2c7aab86123f9417278b0150a",
+    "feature_audit.json": "ad620498d9cc77788b88a05404ec62782d34fe219c6d3f5289331c389454d2fc",
+    "verify_provenance.py": "e1dcef0e604f219fedc66dccaffa80e66818da60e9396334963cadf885b24b58",
+    "duplicate_provenance_audit.json": "09b9e6280e3ad1c3594b556bd138b0aa5d366cbcbd3fb92aa3ed2fefffa479a2",
+    "official_duplicate_source_checks.json": "64fe679c38fbe40c915767e3f77b0c6566c1f4c73f12e2b3c37d9e3f80ef0110"
+  },
+  "new_models_fitted": 0,
+  "reason": "Verified cross-ID duplicates; conservative full-label quarantine. Correct verification to test no duplicate label admitted rather than assume source contains no duplicates.",
+  "unchanged": "Raw extraction, feature definitions, learner, sampling geometry, endpoints and statistics.",
+  "quarantined_participant_labels": [
+    17,
+    25,
+    27,
+    28
+  ]
+}

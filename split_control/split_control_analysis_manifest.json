@@ -1,0 +1,135 @@
+{
+  "status": "all_preplanned_descriptives_and_eight_comparisons_computed",
+  "source_sha256": "e992aae521d8eec9cd76f3f9cfd642e23e213874732851fb9cc2007f889ebfdf",
+  "protocol_file_sha256": "654e4eec8fa7d3cd855ea4373e0623c47fc7d7ab9f0cac5f7fc95af8b2881c77",
+  "input_sha256": {
+    "independent_full_fit_verification.json": "84508527ccc78d5aece0896a656cd1843191e4e0b5462a0ce5de01f7cccdbc36",
+    "verified_recording_predictions.csv": "ec6109064f2959a2c984a4325c0bd85fa41f3c45e71a3484e107050cc82f14bd",
+    "verified_fit_metrics.csv": "a2a533d1a51da19be61e8504fe48da1943ddcf8fca2834b28dc8e6dc6563215f"
+  },
+  "output_sha256": {
+    "split_control_seed_metrics.csv": "680ba0244c9e43774f29930d4fad4f25c8c5876ce8d2cd6997b13efee80fed0e",
+    "split_control_participant_metrics.csv": "e883c1fd1b96a27ed85525a32468961114e4b047235caed87c1fe239b01c92a7",
+    "split_control_arm_summary.csv": "a79a20a0fd05292800df7e26c7f4f2042c0588a38afed370f65f0b9c9305b889",
+    "split_control_sample_size_summary.csv": "f400b27f3133613f09df8599792aabfd70142487b5a78ce1682a39b41eced505",
+    "split_control_comparisons_BH8.csv": "c7c7a42b8548fd5ac0597c801ef001ae88de321034136641ff1d783e3373d5ef",
+    "split_control_participant_contrasts.csv": "974c40a315d43cd0162a608eda456d6185211356c5b22f6fe84f4f8cd0c35def",
+    "split_control_workload_by_participant.csv": "f9bd597b63e8cac459ed3dc3b985b0225d2403b089e0b5cb0cbcc5fb9caa5848",
+    "split_control_workload_summary.csv": "6cafa05e354b0f8213c36b0eae50571faeacba5ecc1b64a3acb7a95c13fe9de3",
+    "split_control_temporal_direction_by_participant.csv": "4411318e6b940885988c94004e277f440b41ea2c330a251be69f2192022422f4",
+    "split_control_temporal_direction_summary.csv": "fc8d42ce3a62197d66c7e6cdb0fa655ed11a723c393b943a24df15010188dc92"
+  },
+  "output_rows": {
+    "split_control_seed_metrics.csv": 790,
+    "split_control_participant_metrics.csv": 158,
+    "split_control_arm_summary.csv": 12,
+    "split_control_sample_size_summary.csv": 12,
+    "split_control_comparisons_BH8.csv": 8,
+    "split_control_participant_contrasts.csv": 105,
+    "split_control_workload_by_participant.csv": 632,
+    "split_control_workload_summary.csv": 48,
+    "split_control_temporal_direction_by_participant.csv": 104,
+    "split_control_temporal_direction_summary.csv": 8
+  },
+  "resampling": {
+    "arithmetic/nonoverlap": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "seed": 6426426107585964173,
+      "matrix": "resampling/arithmetic_nonoverlap_participant_indices.npy",
+      "matrix_sha256": "abd76add69545e95b01e2545d778d229e87db2b7bff095a530d6dd16c186ebb2",
+      "repeats": 10000,
+      "shared_across_all_arms_and_contrasts": true
+    },
+    "arithmetic/temporal": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "seed": 395342362195917523,
+      "matrix": "resampling/arithmetic_temporal_participant_indices.npy",
+      "matrix_sha256": "ebeb0f69c825f9e087f99fab556fb88820da9f089858b0f045e1f95536807a1e",
+      "repeats": 10000,
+      "shared_across_all_arms_and_contrasts": true
+    },
+    "stroop/nonoverlap": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed": 5278118213386391720,
+      "matrix": "resampling/stroop_nonoverlap_participant_indices.npy",
+      "matrix_sha256": "bc85020254067446aeeeeb16746e50c6597fb7a8b8b3dc074efa19b8e4a28726",
+      "repeats": 10000,
+      "shared_across_all_arms_and_contrasts": true
+    },
+    "stroop/temporal": {
+      "subjects": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed": 4513149804027084891,
+      "matrix": "resampling/stroop_temporal_participant_indices.npy",
+      "matrix_sha256": "03e8ef4928ebdae35664303bcad8c7e4332a6f0c323f7a8d4392b9cc00562881",
+      "repeats": 10000,
+      "shared_across_all_arms_and_contrasts": true
+    }
+  },
+  "sign_flip": "Round participant differences to12 decimals, enumerate signs of all nonzero differences using paired sum, include equality with tolerance1e-12, all-zero p=1. Effect in percentage points.",
+  "limits": [
+    "Exploratory after review, not preregistered or confirmatory.",
+    "Participant is the statistical unit; seeds, folds and windows are not independent inferential samples.",
+    "Tasks analyzed separately; cross-task natural duplicates are not independent replication.",
+    "Bootstrap intervals are conditional on these saved fits; sign-flip assumes sign-exchangeability.",
+    "Recording context and within-class workload levels cannot be causally separated by this dataset.",
+    "Nonoverlap contrast changes sampling density and temporal coverage, as well as shared raw samples.",
+    "A fixed logistic learner was used; these new controls do not re-estimate the original Feature-MLP gap."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "original_analysis_sha256": "7e5661ce4607c56803727aaa9fef338e8a2999a663f27f24e1505951f6d8e387",
+  "original_result_manifest_sha256": "daa68229fbaf0585a9d517d9a21735af7f1f66d171d8bdeb37e2fd8cc0f6f785",
+  "publication_changes": [
+    "Repository-relative input paths and compressed copies of saved predictions.",
+    "Exact sign-flip tests include equally and more extreme outcomes.",
+    "No changes to fitted EEG models, gate constants, gain values or uncertainty intervals."
+  ],
+  "original_output_sha256": {
+    "gate_diagnostics.csv": "28c29d4756d7887ad62ce3fd496aa0ba0fcd7a38c412121231b3fd06bf6bd8ed",
+    "participant_deletion.csv": "85c687de0d21e2d5d88789de25af93301ff7c01aa9d55e56a70b6c892bbf8dc0",
+    "participant_metrics.csv": "3c8ced9effeb4b2912cbb907513e5e0b366bd207eb22edd4f70cdf7f676eee66",
+    "recording_predictions.csv": "42807dffad1499b2e618fa377ff9c90ab4be5f329d04241ba93c70de75c2d29c",
+    "response_rows_cross_task.csv": "1cffbb5699ddf58c983b2d32041fd62227ca21ed4974c3c1b70bcf4662ee8f21",
+    "response_rows_loso.csv": "b026fbc3c0776893f70b67eefd9af84d85c8f63a67c91b7d7c2524ed3862b3d9",
+    "summary.json": "7439655704881f42ff4cb31ee51ea7f3ed4ba66d17dc60672aeb5974302b4830",
+    "training_rows_cross_task.csv": "f556117c58b1b3f454fdb0c2381cffb7ea5c5c481c95708bc9e41bab2c231506",
+    "training_rows_loso.csv": "8f8efde6c9cb5e227a8e8a7d59a5745bb9cd933d68b8c339df5bbaf269574e58",
+    "window_predictions.csv": "ba3a32f4076c912b144cbaa815fcaf53d5ccf60c414f7eb6354c5f4052145101"
+  }
+}

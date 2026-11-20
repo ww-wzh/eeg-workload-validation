@@ -1,0 +1,33 @@
+{
+  "verified_utc": "2026-11-10T04:37:06.003974+00:00",
+  "parent_manifest_files_verified": 1011,
+  "sources_sha256": {
+    "analyses\\cogbci_session_validation\\protocol.json": "e961bb7e7193450db98e1a7934b8095c1d84846869b297b3abfa1666d02816cb",
+    "analyses\\cogbci_session_validation\\input_inventory.json": "49705e9e1ca5c1781523c2316a135f409489a9ce169576555b1011218136b1fb",
+    "analyses\\cogbci_session_validation\\feature_audit.json": "ad620498d9cc77788b88a05404ec62782d34fe219c6d3f5289331c389454d2fc",
+    "analyses\\cogbci_session_validation\\analysis_freeze.json": "841ecf55d713f592baef15b23ad971c5e9b3911f02d29933fbc7b395f44e56ed",
+    "analyses\\cogbci_session_validation\\duplicate_provenance_audit.json": "09b9e6280e3ad1c3594b556bd138b0aa5d366cbcbd3fb92aa3ed2fefffa479a2",
+    "analyses\\cogbci_session_validation\\verification.json": "77bb8f5f144102719385abf9b1aa3f5e02af3aa08668874e0dfe55df759b475f",
+    "analyses\\cogbci_session_validation\\neutral_feature_extractor.py": "7e0883223720ad7ba02b2b6de7e95132404a1f59873249faf1a43119e29d6439",
+    "analyses\\cogbci_session_validation\\MANIFEST.sha256": "2d13d35adeba104922cfecf8208c624ebbc111fd11131be182dcc5a42467ec0c",
+    "shared\\revision_pipeline\\models.py": "cd639f79a45f57a24a99443906e70354ea3229ab2329ed054f27757c000f4156",
+    "shared\\revision_pipeline\\risk_gate.py": "71dfc9e6b54693c02ff2c154cc3c84dd57b2a9765eacbd863a27d320414a838d",
+    "shared\\revision_pipeline\\splits.py": "2ac795e205562a3bdc7f0df4a32709966a055660a27c538c2d3bf2e4df50c070",
+    "shared\\revision_pipeline\\gate_pilot.py": "1f804830420305654c3026cde177d2e1f171c7e950980dcdd2c983642d05f194",
+    "shared\\first_dataset\\gate_pilot_protocol.json": "6c50270717e0bc3de0a17ee2607d5bd0a1fb0bd2a8062c8db19d1c86e83274a7",
+    "shared\\first_dataset\\gate_protocol\\nested_gate_protocol.json": "76e75284af130a3ac246caef0994b42bce61cb19f0a3926aa64b2c80a74edf1f",
+    "analyses\\first_dataset_implementation_audit\\audit_legacy_gate.py": "3a72faafcb760e77c3f8f1ced8a0112ba515f8fc2f8435262163949703744aac",
+    "analyses\\first_dataset_implementation_audit\\audit_report.json": "e5582c0c096dfe7137bcaa19801001a525594ff565316314d22e6e0a515e8044",
+    "analyses\\first_dataset_implementation_audit\\sensitivity_scope_audit.json": "1ce46b0f7d64219a6115dc37e006325b1fadddbd486b67b41fe8561e2b6f5a6e",
+    "analyses\\first_dataset_implementation_audit\\threshold_replay_by_gate.csv": "12309ac7bc0ce0c19ed537bd4e497b2bbb5194dae7d0bdd4321becf4d232701a",
+    "analyses\\first_dataset_implementation_audit\\threshold_impact_summary.csv": "80c24339d572494df5af1036a093a7685d6ab77ce3a3a6eb9bff1198b04af5e3"
+  },
+  "historical_declared_model_and_gate_constants_match": true,
+  "legacy_implementation_caveat": "Protocol uses signed event cutoff -0.05, but legacy fitting API internally negates its argument. New runner must pass magnitude +0.05 or implement gain<=-0.05 directly. Historical replay is audited separately.",
+  "publication_export": {
+    "original_file_sha256": "23367c409f711777f15c80c874379ed8d4ecfcc35493757481fc80ea68399deb",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

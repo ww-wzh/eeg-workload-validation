@@ -1,0 +1,48 @@
+{
+  "status": "B1_complete_design_and_inputs_ready_no_training",
+  "counts": {
+    "NBACK": {
+      "participants": 25,
+      "sessions": 63,
+      "records": 126,
+      "windows": 2520
+    },
+    "MATB": {
+      "participants": 25,
+      "sessions": 67,
+      "records": 134,
+      "windows": 2680
+    }
+  },
+  "excluded_record_counts": {
+    "noncanonical_nback_stimulus_interval": 8,
+    "notebook_interrupted_session": 32,
+    "participant_provenance_quarantine": 48
+  },
+  "prepared_records": 260,
+  "prepared_windows": 5200,
+  "max_reconstructed_feature_abs_difference": 0.0,
+  "all_covariances_reconstructed_from_hash_verified_raw_supports": true,
+  "prepared_input_directory": "prepared_records_float64",
+  "covariance_accumulation": "float64 from the same float32 filtered samples",
+  "max_float32_to_float64_relative_fro_error": 3.0837424111511975e-07,
+  "exact_covariance_symmetry": true,
+  "models_fitted": 0,
+  "model_fit_scope": "New COG gate-audit study only; historical small-gate diagnostic replays are separate.",
+  "historical_cbsf_issue_report": "../first_dataset_implementation_audit/audit_report.json",
+  "runtime": {
+    "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:16:45) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.9.0+cu129"
+  },
+  "completed_utc": "2026-11-10T04:38:47.443459+00:00",
+  "publication_export": {
+    "original_file_sha256": "b3229e357d468ead2ee32bf468ec725bbd087c81374d608ba06e341d899e18d9",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

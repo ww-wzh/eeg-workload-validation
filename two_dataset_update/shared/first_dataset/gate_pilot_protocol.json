@@ -1,0 +1,95 @@
+{
+  "schema": "double-exclusion-gate-pilot-v1",
+  "purpose": "Single-unit engineering validation of doubly excluded LOSO meta predictions; not a new primary result or a complete gate experiment.",
+  "timing": "Specified after the existing first-dataset audit and before the first real-data pilot fit; not prospective preregistration of the study.",
+  "task": "arithmetic",
+  "outer_target": 1,
+  "meta_validation": 2,
+  "seed": 1335,
+  "cohort": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "training_subjects": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "preprocessing": "Read only verified 110-v2 fixed-preprocessing caches. No extraction, normalization change, channel change, or feature selection is performed by this pilot.",
+  "feature_dimension": 272,
+  "inner_selection": "Participant LOSO among S03-S15 only; median of inner-fold MLP epochs for the final refit.",
+  "model_config": {
+    "mlp": {
+      "width": 256,
+      "blocks": 3,
+      "dropout": 0.2,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 128,
+      "max_epochs": 100,
+      "patience": 15
+    },
+    "rf": {
+      "n_estimators": 500,
+      "max_depth": 30,
+      "min_samples_leaf": 4,
+      "max_features": 0.25,
+      "n_jobs": -1
+    },
+    "extra_trees": {
+      "n_estimators": 500,
+      "max_depth": 30,
+      "min_samples_leaf": 4,
+      "max_features": 0.25,
+      "n_jobs": -1
+    },
+    "stacker": {
+      "C": 1.0,
+      "max_iter": 2000
+    }
+  },
+  "model_seed_policy": "Inner MLP seed = 1335 + 1009*(fold_index+1); inner RF/ET add 37/74. Final MLP = 1335; final RF/ET add 37/74; stacker = 1335.",
+  "stacker_inputs": "Base-fold logits within S03-S15 only, with inverse-recording-window weights. No S01 or S02 row enters fit or epoch selection.",
+  "target_labels": "Fitting APIs accept no S01/S02 labels. S02 labels enter scoring only after all target probabilities are saved. S01 is not loaded for prediction or scoring.",
+  "output_aggregation": "Single-seed per-class window geometric mean followed by renormalization and argmax; not a five-seed ensemble.",
+  "checkpoint_granularity": "Completed inner/final model prediction stages; not mid-epoch training continuation.",
+  "resume_policy": "Reuse only committed checksummed stages with identical protocol, data, source, runtime and membership. Changed or damaged committed evidence stops the run without deleting it.",
+  "expected_inner_folds": 13,
+  "expected_mlp_fits": 14,
+  "expected_rf_fits": 14,
+  "expected_extra_trees_fits": 14,
+  "expected_stacker_fits": 1,
+  "expected_fit_stages": 43,
+  "expected_recording_prediction_rows": 16,
+  "success_criterion": "Isolation, complete aligned normalized predictions and checkpoint integrity, never a required accuracy or gain.",
+  "overwrite_primary_predictions": false,
+  "publication_export": {
+    "original_file_sha256": "6c50270717e0bc3de0a17ee2607d5bd0a1fb0bd2a8062c8db19d1c86e83274a7",
+    "path_format": "publication-relative paths; workstation executable location omitted",
+    "presentation_changes": "Paths standardized and non-scientific workflow notes removed; scientific values retained.",
+    "embedded_hash_scope": "original execution artifacts; see SOURCE_INDEX.csv for publication hashes"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "all_1580_saved_fits_passed_independent_checks",
+  "new_fits_in_verifier": 0,
+  "audited_fits": 1580,
+  "audited_recording_predictions": 5800,
+  "pilot_fits_reused": 12,
+  "new_full_fits": 1568,
+  "raw_and_frozen_caches_rehashed": 108,
+  "full_reconstructions": 108,
+  "full_reconstruction_max_abs_error": 0.0,
+  "independently_filtered_raw_blocks": 208,
+  "local_vs_full_max_selected_feature_difference": 214639551.0,
+  "maximum_scaler_mean_error": 0.0,
+  "maximum_scaler_variance_error": 0.0,
+  "maximum_probability_error": 0.0,
+  "maximum_record_aggregation_error": 2.220446049250313e-16,
+  "warnings": 0,
+  "iterations_min": 6,
+  "iterations_max": 55,
+  "protected_arm_overlap_pairs": 0,
+  "complementary_folds_and_full_local_exact_starts_verified": true,
+  "panel_size_matching_verified": true,
+  "source_sha256": "df61017aaa3bbc658bde3558061b59b9501640c3806305de28fea11332722887",
+  "inputs_sha256": {
+    "run_identity.json": "592047ebddf5168d43278d60f32c3cf3efe9cf324b344efbfe9e74f096ce33a6",
+    "completed_job_index.csv": "24006416fae84623e92e8614fa3d466c0741fc076d0ce5baf6e31abe65932480",
+    "feature_location_index.json": "9924ce370515dc42b9f3251240c5d0563334950d8d8cbad3c75baa6cffc01c5b"
+  },
+  "outputs_sha256": {
+    "verified_recording_predictions.csv": "ec6109064f2959a2c984a4325c0bd85fa41f3c45e71a3484e107050cc82f14bd",
+    "verified_fit_metrics.csv": "a2a533d1a51da19be61e8504fe48da1943ddcf8fca2834b28dc8e6dc6563215f"
+  },
+  "scope": "Checksum, geometry, saved feature reconstruction, train-only transforms, saved coefficients, probabilities and aggregation audit; not an independent model retraining."
+}

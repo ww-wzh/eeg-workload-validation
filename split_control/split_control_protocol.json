@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "name": "Sensors exploratory split mechanism controls",
+  "status": "pre_fit_design_validated_not_results",
+  "timing": "Designed after review and after original scores were known; feasibility uses recording lengths, not new model scores. Not preregistered or confirmatory.",
+  "cohort": {
+    "arithmetic": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stroop": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "raw_labels": {
+    "natural": 0,
+    "lowlevel": 0,
+    "midlevel": 1,
+    "highlevel": 1
+  },
+  "known_cross_task_duplicates": "Natural recordings for S01-S13 are identical across task folders in this cohort. This was already disclosed. Analyze each task separately; do not treat task results as independent replications or pool the copies as independent records. Within each task all retained file hashes are unique.",
+  "sampling_rate_hz": 250,
+  "window_samples": 2125,
+  "dense_stride_samples": 125,
+  "temporal_gap_samples": 2500,
+  "filter_edge_discard_samples_each_end": 1250,
+  "geometry": "Middle aligned down to 125 samples. Raw early block [0,middle-1250); late block [middle+1250,N). Discard 1250 samples at both ends of each filtering unit. Retain only complete 2125-sample windows.",
+  "gap_rationale": "10 seconds exceeds one analysis window and equals five periods at the 0.5-Hz high-pass edge. This is an operational separation, not proof that physiological dependence or an IIR impulse response vanishes. Separate-block filtering is the direct control for cross-partition filtering dependence.",
+  "edge_rationale": "5 seconds is a fixed boundary discard, not a guarantee of complete filter settling. A 10-second-discard feasibility analysis is exported; no discard is selected by its accuracy.",
+  "seeds": [
+    1335,
+    1388,
+    1441,
+    1494,
+    1547
+  ],
+  "folds_per_seed": 2,
+  "temporal_panel": {
+    "q": "Minimum number of eligible dense windows across the eight early/late blocks of one participant-task cell. Require q>=1. Every fit has 4q training and 4q testing windows, balanced by binary class.",
+    "random_block_pool_full": "For each record sample 2q distinct starts from the union of its eligible early/late blocks; randomly assign q to each partition, then reverse. Full-record filtering. Shared raw samples between different windows are intentional and counted.",
+    "temporal_block_full": "Choose q starts in each early/late block, train early and test late, then reverse. Reuse unchanged full-record-filtered features at those exact starts.",
+    "temporal_block_local": "Use exactly the same starts as temporal_block_full. Independently filter raw early and late blocks with the unchanged notch/bandpass parameters. Recompute features; never obtain block features by slicing a full-record-filtered signal.",
+    "recording_holdout_full": "Within the same eligible participants, use complementary folds holding out one full record per class. Sample 2q interior dense windows per selected record, giving 4q train and 4q test. Independent full-record filtering per record. This arm still combines recording context and within-class workload-level changes."
+  },
+  "nonoverlap_panel": {
+    "q": "Minimum floor(K_record/2) across four records, where K counts 2125-stride windows after full-record edge discard. Require q>=1. Use this panel's own eligible cohort and do not numerically contrast different panels.",
+    "random_dense_matched": "From each record's 125-stride interior grid, sample q train and q test starts without replacement; reverse partitions for fold 2. Full-record filtering.",
+    "random_nonoverlap_matched": "Same numbers, from a 2125-stride grid; no raw sample belongs to more than one selected window. Same records still occur on both sides and full-record filtering remains shared.",
+    "limitation": "Exact size matching can leave very few windows. Report this explicitly. The non-overlap contrast changes temporal sampling density/coverage as well as raw overlap; it is not a causal isolation of overlap alone."
+  },
+  "filtering_and_features": "250 Hz, eight EEG columns after counter removal; 50-Hz second-order notch Q30 with sosfiltfilt, float32, then fourth-order 0.5-55 Hz Butterworth sosfiltfilt, float32. Same 272-D, 4096 FFT, no z-score, multipliers1, epsilon1e-12. Existing full-record features may be reused only after checksum and geometry verification. Block-local features require new extraction.",
+  "learner": {
+    "classifier": "LogisticRegression",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "max_iter": 4000,
+    "tol": 0.0001,
+    "random_state": 0,
+    "fit_intercept": true,
+    "regularization": "L2",
+    "training_feature_mask": "training std(ddof=0)>1e-8",
+    "scaling": "StandardScaler fitted on current training windows only",
+    "numeric_threads": 1,
+    "training_row_order": "Ascending raw_level, then ascending original window start within recording",
+    "tuning": "None; any ConvergenceWarning fails that fit. No frozen primary model is overwritten."
+  },
+  "evaluation": {
+    "recording_probability": "Geometric mean of test-window class probabilities clipped to [1e-12,1], then normalize; argmax tie chooses class0.",
+    "same_record_arms": "Score four test recordings per fold; average two fold metrics and then five seed metrics within participant. Opposite temporal directions must also be shown descriptively.",
+    "recording_holdout": "Pool complementary test folds into four record predictions per seed, score, then average five seed metrics within participant.",
+    "primary": "Participant mean of recording balanced accuracy. Retain per-record probabilities and predictions, task, participant, level, seed, fold and arm.",
+    "level_results": "For each of natural/low/medium/high, describe across-participant record correctness and probability. Each participant has one record per level; do not infer an independently replicated level effect or claim isolated recording-context effects."
+  },
+  "statistics": {
+    "unit": "participant",
+    "bootstrap_repeats": 10000,
+    "resampling": "One task-and-panel-specific participant-index matrix, shared across all arms and contrasts with the same eligible cohort. Percentile95% CI; exact paired sign-flip as exploratory test.",
+    "bootstrap_seed": "First8 bytes little-endian of SHA256('Sensors_split_controls_v1|'+task+'|'+panel), numpy default_rng PCG64. Sort participant IDs before resampling; numpy quantile method=linear.",
+    "sign_flip": "Round participant differences to12 decimals, enumerate signs of all nonzero differences using paired sum, include equality with tolerance1e-12, all-zero p=1. Effect in percentage points.",
+    "comparisons_per_task": [
+      [
+        "random_block_pool_full",
+        "temporal_block_full"
+      ],
+      [
+        "temporal_block_full",
+        "temporal_block_local"
+      ],
+      [
+        "temporal_block_local",
+        "recording_holdout_full"
+      ],
+      [
+        "random_dense_matched",
+        "random_nonoverlap_matched"
+      ]
+    ],
+    "multiplicity": "Eight exploratory comparisons (two tasks times four), one BH family. Raw p values and all participant differences retained; no post-result switch of the primary contrast.",
+    "limits": "Intervals conditional on these fixed fits; sign-flip requires sign-exchangeability. Seed/fold/window counts are not inferential sample sizes."
+  },
+  "pilot": {
+    "task": "arithmetic",
+    "subject": 1,
+    "seed": 1335,
+    "scope": "12 planned fits: six arms times two complementary folds. Pilot validates features, probabilities, checkpoints, convergence and runtime; it is included unchanged in any later full execution."
+  },
+  "not_addressed": [
+    "Reconstructed-gate BA response, participant deletion and seed diagnostics",
+    "Second dataset",
+    "A causal separation of workload level from record identity on this dataset",
+    "Independent online or deployment validation"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "execution_frozen_at_utc": "2026-09-06T12:35:05.206108+00:00",
+  "execution_completed_at_utc": "2026-09-06T12:37:46.976448+00:00",
+  "original_protocol_sha256": "03301b861f552f5a52c59d3144e38dced418f9eace775150bd7cee466547bbdf",
+  "original_request_export_sha256": "3a3a47b267f72b39b1e277555aa80b46312d043c2bafb731900af675afcb98a3",
+  "counts": {
+    "reused_fits": 308,
+    "new_random_window_fits": 560,
+    "audit_folds": 868,
+    "recording_probability_rows": 2912,
+    "evaluation_blocks": 728,
+    "participant_strategy_rows": 112,
+    "comparison_rows": 12
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "numeric_libraries": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.31.188.0",
+        "architecture": "Haswell",
+        "threading_layer": "pthreads"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.30",
+        "architecture": "Haswell",
+        "threading_layer": "pthreads"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "threading_layer": null
+      }
+    ],
+    "numeric_threads": 1,
+    "pandas": "3.0.2"
+  },
+  "source_prediction_sha256": "cba069dd3837e9b3894dc2649aa6c8a9ac80812de996b2dc51cc0aa056f5c5cd",
+  "recorded_convergence_warnings": 0,
+  "observed_score_max_abs_error": 0.0,
+  "source_file_hashes": [
+    {
+      "file": "window_indices.npz",
+      "original_sha256": "58745157ee1b600059709f70eb9cbddb9cc4eb4f16c2dfebb2490ab3db194f36",
+      "packaged_sha256": "58745157ee1b600059709f70eb9cbddb9cc4eb4f16c2dfebb2490ab3db194f36",
+      "treatment": "Original bytes; descriptive filename"
+    },
+    {
+      "file": "recording_predictions.csv",
+      "original_sha256": "9d7d8fc56c85dc10585dd0ee2c8e918e5390fe3eedf15ba4dc7bf2a91962791d",
+      "packaged_sha256": "9d7d8fc56c85dc10585dd0ee2c8e918e5390fe3eedf15ba4dc7bf2a91962791d",
+      "treatment": "Original bytes; descriptive filename"
+    },
+    {
+      "file": "block_metrics.csv",
+      "original_sha256": "6997a7a65c20136905a1cf043b016fb5c6155aaa5dc6d04fc1a3a6e104fa14ee",
+      "packaged_sha256": "6997a7a65c20136905a1cf043b016fb5c6155aaa5dc6d04fc1a3a6e104fa14ee",
+      "treatment": "Original bytes; descriptive filename"
+    },
+    {
+      "file": "participant_metrics.csv",
+      "original_sha256": "8059bdcc8bbfd8fa9945e0f23d6644403c6159960cb8578a5d36c31e57b79421",
+      "packaged_sha256": "8059bdcc8bbfd8fa9945e0f23d6644403c6159960cb8578a5d36c31e57b79421",
+      "treatment": "Original bytes; descriptive filename"
+    },
+    {
+      "file": "summary_intervals.csv",
+      "original_sha256": "522d40202046c6c538abcd6335f17e645ff214e63005464e3dade09ab105d237",
+      "packaged_sha256": "522d40202046c6c538abcd6335f17e645ff214e63005464e3dade09ab105d237",
+      "treatment": "Original bytes; descriptive filename"
+    },
+    {
+      "file": "comparisons.csv",
+      "original_sha256": "8c51bc512a139b68695ed0a4c84d663ac6a8442922d7cddb4990b7d8b89d3a89",
+      "packaged_sha256": "8c51bc512a139b68695ed0a4c84d663ac6a8442922d7cddb4990b7d8b89d3a89",
+      "treatment": "Original bytes; descriptive filename"
+    },
+    {
+      "file": "participant_differences.csv",
+      "original_sha256": "46bb7582efdedb1ee135ffb79d6827a1d380b41ae618686535a6cbe798eaf9b9",
+      "packaged_sha256": "46bb7582efdedb1ee135ffb79d6827a1d380b41ae618686535a6cbe798eaf9b9",
+      "treatment": "Original bytes; descriptive filename"
+    },
+    {
+      "file": "fold_diagnostics.csv",
+      "original_sha256": "1b46533f14f474511e2542e94035a9dbae409aa2030aea9aadf51952e615996c",
+      "packaged_sha256": "1b46533f14f474511e2542e94035a9dbae409aa2030aea9aadf51952e615996c",
+      "treatment": "Original bytes; descriptive filename"
+    },
+    {
+      "file": "fold_requests.json",
+      "original_sha256": "3a3a47b267f72b39b1e277555aa80b46312d043c2bafb731900af675afcb98a3",
+      "packaged_sha256": "3a3a47b267f72b39b1e277555aa80b46312d043c2bafb731900af675afcb98a3",
+      "treatment": "Original bytes; descriptive filename"
+    }
+  ],
+  "provenance_fields": "Fold origins and result payload hashes retain their execution identifiers. Model payloads and feature arrays are outside this package; their hashes are historical references."
+}

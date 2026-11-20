@@ -1,0 +1,5 @@
+protocol,direction,deletion_refits,deletion_changes_over_point1,seed_cells,seed_ranges_over_point5,min_weight,max_weight
+cross_task,arithmetic_to_stroop,156,35,13,8,2.331650190671042e-09,0.7999998774070972
+cross_task,stroop_to_arithmetic,156,32,13,7,3.2965585907946963e-06,0.799999999999997
+loso,arithmetic,210,18,15,9,1.7345779638116376e-05,0.7999994065265102
+loso,stroop,156,20,13,8,3.51239135663854e-07,0.7999986441863816

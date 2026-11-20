@@ -1,0 +1,13 @@
+﻿task,panel,arm,participants,fits,train_windows_min,train_windows_median_across_participants,train_windows_max,test_windows_equal_train
+arithmetic,nonoverlap,random_dense_matched,14,140,8,12.0,20,True
+arithmetic,nonoverlap,random_nonoverlap_matched,14,140,8,12.0,20,True
+arithmetic,temporal,random_block_pool_full,14,140,28,98.0,228,True
+arithmetic,temporal,recording_holdout_full,14,140,28,98.0,228,True
+arithmetic,temporal,temporal_block_full,14,140,28,98.0,228,True
+arithmetic,temporal,temporal_block_local,14,140,28,98.0,228,True
+stroop,nonoverlap,random_dense_matched,13,130,4,12.0,16,True
+stroop,nonoverlap,random_nonoverlap_matched,13,130,4,12.0,16,True
+stroop,temporal,random_block_pool_full,12,120,12,66.0,168,True
+stroop,temporal,recording_holdout_full,12,120,12,66.0,168,True
+stroop,temporal,temporal_block_full,12,120,12,66.0,168,True
+stroop,temporal,temporal_block_local,12,120,12,66.0,168,True

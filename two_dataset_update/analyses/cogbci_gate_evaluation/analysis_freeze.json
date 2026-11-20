@@ -1,0 +1,9 @@
+{
+  "identity": {
+    "analysis_sha256": "7b4d5847240c5cc3f34ab77e006612300bab40d3baa398ce9cefe2675fb04cbd",
+    "protocol_sha256": "a1fd8aaea302b330eec6340c9fa44d31156d843feb41656e913cb8c0613bccda",
+    "risk_helpers_sha256": "71dfc9e6b54693c02ff2c154cc3c84dd57b2a9765eacbd863a27d320414a838d"
+  },
+  "frozen_utc": "2026-11-10T07:38:43.925761+00:00",
+  "new_gate_outcomes_examined": false
+}

@@ -1,0 +1,17 @@
+{
+  "independent_participants": 25,
+  "tasks": 2,
+  "record_aggregations_checked": 5600,
+  "seed_response_gains_recomputed": 12000,
+  "nested_memberships_checked": 225000,
+  "gate_fits_and_decisions_replayed": 8850,
+  "max_gate_error": 2.220446049250313e-16,
+  "status": "passed",
+  "utc": "2026-11-16T18:52:31.048396+00:00",
+  "max_record_probability_error": 2.220446049250313e-16,
+  "primary_contrasts_checked": 12,
+  "BH12_verified_with_statsmodels": true,
+  "analysis_sha256": "7b4d5847240c5cc3f34ab77e006612300bab40d3baa398ce9cefe2675fb04cbd",
+  "verifier_sha256": "9b39f84bb4d64282bde81885c861da9fab370a7da9f3324398e372fb8adc7a2d",
+  "remote_files_modified": false
+}
