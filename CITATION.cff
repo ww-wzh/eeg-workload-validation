@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite the archived software version used in your analysis."
 title: "EEG Workload Validation: Experimental Code and Results"
 type: software
-version: "1.0.0"
+version: "1.1"
 authors:
   - family-names: "Wan"
     given-names: "Zihao"
