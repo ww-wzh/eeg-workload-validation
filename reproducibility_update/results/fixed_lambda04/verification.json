@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "analysis": "Post-hoc descriptive fixed lambda=0.4 blend; outside BH12; no new significance tests",
+  "aggregation": "Seed-median normalized window probabilities, window-level blend, geometric aggregation within each recording",
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261110,
+  "max_original_probability_error": 3.3306690738754696e-16,
+  "input_zip_sha256": "500c23cf9521043a1598a78c685f08f0da0e3fd8d85d93ab0b0fb763c391b40e",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "3.0.1"
+}

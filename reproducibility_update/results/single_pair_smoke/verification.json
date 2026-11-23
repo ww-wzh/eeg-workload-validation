@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "One participant, one directed session pair, one seed; engineering reproduction only",
+  "pair_id": "sub-02_NBACK_S2_to_S3",
+  "seed": 1335,
+  "test_windows_per_arm": 20,
+  "training_windows_per_arm": 20,
+  "test_windows_identical": true,
+  "raw_supports_disjoint_within_target": true,
+  "feature_max_abs_difference": 0.0,
+  "archived_prediction_max_abs_difference": 0.0,
+  "raw_fdt_sha256": {
+    "sub-02_S2_zeroBACK": "9bbe180215dd63cf56db30a827908fb0ccfe2098e3ca70bdf12a7ac7eced57e3",
+    "sub-02_S2_twoBACK": "ea440f7b76e891564d7f827e73a181d0bd7854bf31249ae93a8ac94345ec3ac2",
+    "sub-02_S3_zeroBACK": "2e3b9f3fb4483c8561cca27067950d91b9bb84ea1bd9245d87984b15f059732e",
+    "sub-02_S3_twoBACK": "c250c4248d4d144a829e95dde06d30788e0e0bf6b93dce5da8f29c8b46c7006b"
+  },
+  "code_sha256": {
+    "run_validation.py": "069bf7cf6318b6fe7690b0dde7e8ca9869500e371ccd71685fcfe9b795b13dac",
+    "audit_inputs.py": "5eb74cd477e6f0aabacc39ef547e3d9e01e6f9370af2e989b68d4631fb36aa3e",
+    "neutral_feature_extractor.py": "33a7264f5412af4ec3cbbc67748d8a75c970d48b79b8460caf1e4f20e7675623",
+    "protocol.json": "d28e8b0cd120743ace9af4d824b19e5d13b0c955c1be785c2015ab261f5ec24e"
+  },
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.9.0+cu129"
+  }
+}

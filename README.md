@@ -21,6 +21,19 @@ and COG-BCI EEG workload data.
 | `two_dataset_update/analyses/cogbci_gate_evaluation/` | Nested model training, gate comparisons, bridges and ablations |
 | `revision_pipeline/`, `route_a/`, `two_dataset_update/shared/` | Shared preprocessing, model, split and fusion implementations |
 | `heldout_gate/`, `balanced_gain/` | Earlier gate implementations retained as experimental comparators |
+| `reproducibility_update/` | Post-hoc fixed 0.4 blend, sampling-distance audit, single-pair raw-EEG reproduction, and verification outputs |
+
+## Version 1.3 additions
+
+This update retains the V1.2 experimental predictions and prespecified test
+families. It adds a descriptive fixed-weight comparison using saved probabilities
+and a minimal raw-EEG reproduction for one participant, one directed session
+pair, and one seed. The example checks identical test supports in both arms.
+See `reproducibility_update/README.md` for input files, commands, environments,
+and the distinction between descriptive comparisons and the existing BH12 tests.
+
+V1.2 remains archived at https://doi.org/10.5281/zenodo.24434545. That DOI does
+not contain these additions; cite the archive for the version actually used.
 
 ## Verify saved evidence
 
@@ -53,6 +66,7 @@ https://doi.org/10.5281/zenodo.24340688. This distribution retains scientific
 source hashes and the corrections recorded with each analysis.
 
 `PROVENANCE.csv` maps distributed files to their prior-distribution hashes.
+New reproduction files have no prior-distribution hash.
 `MANIFEST.sha256` covers this snapshot. Historical execution hashes inside
 protocols and reports identify the actual experiment files; the source index
 records normalized distribution hashes separately.

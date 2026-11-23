@@ -1,0 +1,5 @@
+pair_id,seed,arm,record_id,label,p0,p1,prediction,record_balanced_accuracy,window_balanced_accuracy
+sub-02_NBACK_S2_to_S3,1335,same_record,sub-02_S3_zeroBACK,0,0.98760358885948,0.01239641114052008,0,1.0,0.95
+sub-02_NBACK_S2_to_S3,1335,same_record,sub-02_S3_twoBACK,1,0.00042632899657374916,0.9995736710034262,1,1.0,0.95
+sub-02_NBACK_S2_to_S3,1335,cross_session,sub-02_S3_zeroBACK,0,0.9946240021566092,0.0053759978433908714,0,0.5,0.55
+sub-02_NBACK_S2_to_S3,1335,cross_session,sub-02_S3_twoBACK,1,0.9876650530124328,0.01233494698756709,0,0.5,0.55
